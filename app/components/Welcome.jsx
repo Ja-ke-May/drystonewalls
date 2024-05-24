@@ -35,7 +35,7 @@ const Welcome = () => {
         <div className="mt-8 mb-4">
           <Link href="/homepage" passHref>
             <button className="menu-background hover:border-green-600 border-2 border-gray-600/0 text-white font-bold py-2 px-4">
-              Enter Site
+              Enter
             </button>
           </Link>
         </div>

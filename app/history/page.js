@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 
+import ComingSoon from "../components/ComingSoon";
+
 export default function History() {
 
   useEffect(() => {
@@ -37,7 +39,7 @@ export default function History() {
           </span>
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
-        
+        <ComingSoon />
         <Footer />
         <Menu className='z-20' />
       </main>
