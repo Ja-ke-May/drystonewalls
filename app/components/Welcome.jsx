@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 const Welcome = () => {
+  const [rotate, setRotate] = useState(false);
+
+  const handleHammerClick = () => {
+    setRotate(true);
+    setTimeout(() => setRotate(false), 1000); 
+  };
+
   return (
     <div className="relative mt-20 z-20">
       <div id="welcome-container" className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white md:max-w-[100%]">
@@ -27,8 +34,9 @@ const Welcome = () => {
           <div className='flex w-full items-center justify-center'>
           <img
           src='/images/hammer-no-background.png'
-          className='mt-4 h-20 w-20' 
+          className={`mt-4 h-20 w-20 ${rotate ? 'rotate-animation' : ''}`} 
           alt='walling hammer'
+          onClick={handleHammerClick}
           />
           </div>
         </div>
