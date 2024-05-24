@@ -48,13 +48,13 @@ const Footer = () => {
       <button className="hover:text-green-600 text-lg block" title='contact'>Contact</button>
 </Link>
 
-      <hr className="text-image-fill w-1/2 m-4" />
+      <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div>
 
       <a href="mailto:jacob.may@outlook.com" className="hover:text-green-600 text-xl block m-2" title='email'>Jacob.May@outlook.com</a>
 
       <a href="tel:07780685832" className="hover:text-green-600 text-xl block m-2" title='phone'>07780685832</a>
 
-      <hr className="text-image-fill w-1/2 m-4" />
+      <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div>
 
       <a onClick={scrollToTop} className="hover:text-green-600 text-lg">Back to Top</a>
     </div>
