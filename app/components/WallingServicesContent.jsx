@@ -45,7 +45,7 @@ const WallingServicesContent = () => {
      [
         { url: '../images/yd-gap-1.jpg', description: 'Walling near Settle' },
         { url: '../images/yd-gap-2.jpg', description: 'Big Gaps' },
-        { url: '../images/yd-wall.jpg', description: 'Lots of random shaped stone' },
+        { url: '../images/yd-wall.jpg', description: 'Random shaped stone' },
         { url: '../images/yd-wall-2.jpg', description: 'Bit cold but looking good' },
       ];
 
@@ -61,13 +61,13 @@ const WallingServicesContent = () => {
     <div className="relative mt-20 z-20 max-w-[100%]">
       <div id="walling-services-opening" className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white md:max-w-[100%]">
         <div className="text-xl flex items-center justify-center inset-x-0 mb-4">
-        <h2 className='underline hover:text-green-600'><Link href="/wallingservices" passHref>Walling Services</Link></h2>
+        <h2 className='underline hover:text-green-600 font-bold'><Link href="/wallingservices" passHref>Walling Services</Link></h2>
         </div>
         <div className="text-lg">
           <p>
           Located in Huddersfield, I offer field walling/gapping services starting at £40 per meter. 
           <br />
-          Every job is unique, so please <span className='underline hover:text-green-600'><Link href="/contact" passHref>reach out</Link></span> for a personalized quote. 
+          Every job is unique, so please <span className='underline hover:text-green-600'><Link href="/contact" passHref>reach out</Link></span> for a personalised quote. 
           </p>
         
   
@@ -89,11 +89,11 @@ const WallingServicesContent = () => {
 <div className="relative mt-20 z-20 max-w-[100%]">
       <div className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white">
         <div className="text-xl flex items-center justify-center inset-x-0 mb-4">
-        <h3><u>Previous Work</u></h3>
+        <h3 className='underline font-bold'>Previous Work</h3>
         </div>
         <div className="text-lg">
           <p>
-           Please view my previous work below. Click/tap the left or right buttons to view more.
+           Use the grey arrow buttons to scroll through the images. Click an image to hide/show text. Full screen button top left.
            </p>
            <br />
            <div className='w-[100%] menu-background h-2'></div>
