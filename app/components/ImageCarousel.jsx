@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const ImageCarousel = ({ images, mainTitle }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showHideInfo, setShowHideInfo] = useState(true);
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -11,8 +12,12 @@ const ImageCarousel = ({ images, mainTitle }) => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
+  const handleImageClick = () => {
+    setShowHideInfo(!showHideInfo);
+  };
+
   return (
-    <div className="relative w-full max-w-lg mx-auto flex items-center justify-center overflow-hidden">
+    <div className="relative w-full max-w-lg mx-auto flex items-center justify-center overflow-hidden mt-4 mb-4">
       <button
         className="absolute left-0 bg-green-800 text-white p-2 rounded-full z-20 m-2"
         onClick={handlePrevClick}
@@ -29,11 +34,14 @@ const ImageCarousel = ({ images, mainTitle }) => {
               src={image.url}
               className="m-4 max-h-60 max-w-60 lg:max-h-80 lg:max-w-80"
               alt={`carousel image ${index + 1}`}
+              onClick={handleImageClick}
             />
-             
-            <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-2 w-full text-center">
-              {image.description}
-            </div>
+                
+            {showHideInfo && (
+              <div className="absolute bottom-0 bg-black bg-opacity-50 text-sm text-white p-2 w-full text-center">
+                {image.description}
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -44,7 +52,9 @@ const ImageCarousel = ({ images, mainTitle }) => {
         &gt;
       </button>
       
-      <h3 className="absolute top-0 bg-black bg-opacity-50 text-white p-2 w-full text-center">{mainTitle}</h3>
+      {showHideInfo && (
+        <h3 className="absolute top-0 bg-black bg-opacity-50 text-white p-2 w-full text-center">{mainTitle}</h3>
+      )}
     </div>
   );
 };
