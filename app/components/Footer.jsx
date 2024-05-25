@@ -56,9 +56,9 @@ const Footer = () => {
 
       <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div>
 
-     <a href="https://portfolio-tau-two-33.vercel.app/" className='hover:text-green-600 text-xl block m-2'>Jacob May - Web Developer Portfolio</a>
+     {/* <a href="https://portfolio-tau-two-33.vercel.app/" className='hover:text-green-600 text-xl block m-2'>Jacob May - Web Developer Portfolio</a>
 
-     <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div>
+     <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div> */}
      
       <a onClick={scrollToTop} className="hover:text-green-600 text-lg">Back to Top</a>
     </div>

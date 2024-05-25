@@ -7,6 +7,8 @@ import Menu from "../components/Menu";
 import WallingServicesHomepge from "../components/WallingServicesHomepge";
 import LearnTheBasicsHomepge from "../components/LearnTheBasicsHomepage";
 import HistoryHomepage from "../components/HistoryHomepage";
+import WallTypesHomepage from "../components/WallTypesHomepage";
+import QuizHomepage from "../components/QuizHomepage";
 
 
 export default function Homepage() {
@@ -46,8 +48,8 @@ export default function Homepage() {
 <WallingServicesHomepge />
 <LearnTheBasicsHomepge />
 <HistoryHomepage />
-
-
+<WallTypesHomepage /> 
+<QuizHomepage />  
 
         <Footer />
         <Menu className='z-20' />

@@ -11,17 +11,17 @@ const LearnTheBasicsHomepge = () => {
         </div>
         <div className="text-lg">
           <p>
-            Want to learn how to build dry stone walls? 
+          Interested in building dry stone walls?
           </p>
           <div className='flex w-full items-center justify-center'>
           <img
           src='../images/dry-stone-wall-stripped.jpg'
-          className="m-4 max-h-60 max-w-60"
+          className="m-4 max-h-60 max-w-60 lg:max-h-80 lg:max-w-80"
           alt='dry stone wall stripped and 1st lift'
           />
           </div>
           <p>
-            Click <span className='underline hover:text-green-600'><Link href="/learnthebasics" passHref>here</Link></span> for more info.
+          <span className='underline hover:text-green-600'><Link href="/learnthebasics" passHref>Start Your Journey Here</Link></span>
           </p>
           
         </div>

@@ -23,7 +23,7 @@ const WallingServicesHomepge = () => {
           <div className='flex w-full items-center justify-center'>
           <img
           src='../images/me-with-big-stone.jpg'
-          className="m-4 max-h-60 max-w-60"
+          className="m-4 max-h-60 max-w-60 lg:max-h-80 lg:max-w-80"
           alt='man smiling with big stone'
           />
           </div>
