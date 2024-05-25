@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 
-import ComingSoon from "../components/ComingSoon";
+import WallingServicesContent from "../components/WallingServicesContent";
 
 export default function WallingServices() {
 
@@ -13,11 +13,9 @@ export default function WallingServices() {
     const hour = new Date().getHours();
 
     if (imageElement) {
-      if (hour >= 6 && hour < 18) {
-        // Daytime: 6 AM to 6 PM
+      if (hour >= 6 && hour < 21) {
         imageElement.src = 'images/malham-cove-day.jpg';
       } else {
-        // Nighttime: 6 PM to 6 AM
         imageElement.src = 'images/malham-cove-night.jpg';
       }
     }
@@ -40,7 +38,7 @@ export default function WallingServices() {
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
 
-        <ComingSoon />
+      <WallingServicesContent />
         
         <Footer />
         <Menu className='z-20' />

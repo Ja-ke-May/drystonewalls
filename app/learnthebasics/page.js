@@ -13,11 +13,9 @@ export default function LearnTheBasics() {
     const hour = new Date().getHours();
 
     if (imageElement) {
-      if (hour >= 6 && hour < 18) {
-        // Daytime: 6 AM to 6 PM
+      if (hour >= 6 && hour < 21) {
         imageElement.src = 'images/malham-cove-day.jpg';
       } else {
-        // Nighttime: 6 PM to 6 AM
         imageElement.src = 'images/malham-cove-night.jpg';
       }
     }
