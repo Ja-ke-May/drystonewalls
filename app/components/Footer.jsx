@@ -14,11 +14,11 @@ const Footer = () => {
 
   return (
     <div id="footer" className="relative flex flex-col w-full bg-black/80 text-white text-center text-opacity-80 justify-center items-center mt-40 pt-5 pb-5 pr-1 pl-1">
-      <img
+      <Link href="/homepage" passHref><img
           src='/images/main-logo.png'
           className='mt-2 h-20 max-w-40' 
           alt='walling hammer'
-          />
+          /></Link>
 
       <Link href="/homepage" passHref>
       <button className="hover:text-green-600 text-lg block mt-2" title='homepage'>Home</button>
