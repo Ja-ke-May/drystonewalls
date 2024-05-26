@@ -125,7 +125,7 @@ const ImageCarousel = ({ images, mainTitle }) => {
         <h3 className="absolute top-0 bg-black bg-opacity-50 text-white font-bold p-2 w-full text-center">{mainTitle}</h3>
       )}
        <button
-        className="absolute top-0 left-0 text-white font-black p-2 z-20 m-2"
+        className="absolute top-0 left-0 text-white font-black p-2 z-20 ml-2 mt-5"
         onClick={toggleFullscreen}
       >
         ⛶
