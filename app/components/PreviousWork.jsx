@@ -1,43 +1,44 @@
 import React from 'react';
 import ImageCarousel from './ImageCarousel';
+import Link from 'next/link';
 
 const PreviousWork = () => {
 
     const NoviceCompImages = 
      [
-        { url: '../images/lakes-walling-comp-group.png', description: 'Group photo' },
-        { url: '../images/novice-trophy.jpg', description: 'First walling competition win!' },
-        { url: '../images/novice-comp-wall-jack.jpg', description: 'The wall and Jack 🐾' },
-        { url: '../images/novice-comp-reverse.jpg', description: 'The other side' },
-        { url: '../images/novice-certificate.jpg', description: 'Certificate' },
+      { url: '../images/lakes-walling-comp-group.png', description: 'Group photo', link: 'https://www.friendsofthelakedistrict.org.uk/', linkText: 'FriendsoftheLakeDistrict' },
+        { url: '../images/novice-trophy.jpg', description: 'First walling competition win!', link: 'https://www.friendsofthelakedistrict.org.uk/', linkText: 'FriendsoftheLakeDistrict'  },
+        { url: '../images/novice-comp-wall-jack.jpg', description: 'The wall and Jack 🐾', link: 'https://www.friendsofthelakedistrict.org.uk/', linkText: 'FriendsoftheLakeDistrict'  },
+        { url: '../images/novice-comp-reverse.jpg', description: 'The other side', link: 'https://www.friendsofthelakedistrict.org.uk/', linkText: 'FriendsoftheLakeDistrict'  },
+        { url: '../images/novice-certificate.jpg', description: 'Certificate', link: 'https://www.friendsofthelakedistrict.org.uk/', linkText: 'FriendsoftheLakeDistrict'  },
       ];
 
       const OtleyVolunteering = 
      [
-        { url: '../images/shaping-copes.jpg', description: 'Making copes' },
-        { url: '../images/otley-foundations.jpg', description: 'Foundations in' },
-        { url: '../images/otley-foundation-stones.jpg', description: 'Wall started' },
+        { url: '../images/shaping-copes.jpg', description: 'Making copes', link: 'https://www.otleyyorksdalesdswa.org/', linkText: 'otleyyorksdalesdswa' }, 
+        { url: '../images/otley-foundations.jpg', description: 'Foundations in', link: 'https://www.otleyyorksdalesdswa.org/', linkText: 'otleyyorksdalesdswa' },
+        { url: '../images/otley-foundation-stones.jpg', description: 'Wall started', link: 'https://www.otleyyorksdalesdswa.org/', linkText: 'otleyyorksdalesdswa' },
       ];
 
       const DSWA1 = 
      [
-        { url: '../images/different-wall-types.jpg', description: 'Dry Stone Walling Association Level 1 course' },
-        { url: '../images/stripping-out-level1.jpg', description: 'Stripping Out' },
-        { url: '../images/foundations-course-started-level1.jpg', description: 'Test day build' },
-        { url: '../images/first-lift-level1.jpg', description: 'First lift' },
-        { url: '../images/me-walling-level1.jpg', description: 'Action shot' },
-        { url: '../images/throughs-on-level1.jpg', description: 'Throughs on' },
-        { url: '../images/second-lift-level1.jpg', description: 'Second lift started' },
-        { url: '../images/second-lift-2-level1.jpg', description: 'Almost there' },
-        { url: '../images/field-wall-complete.jpg', description: 'Field Wall Complete' },
-        { url: '../images/complete-sandstone-level1.jpg', description: 'Sandstone Wall Complete' },
+        { url: '../images/different-wall-types.jpg', description: 'Dry Stone Walling Association Level 1 course', link: 'https://www.dswa.org.uk/', linkText: 'DWSA'},
+        { url: '../images/stripping-out-level1.jpg', description: 'Stripping Out', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/foundations-course-started-level1.jpg', description: 'Test day build', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/first-lift-level1.jpg', description: 'First lift', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/me-walling-level1.jpg', description: 'Action shot', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/throughs-on-level1.jpg', description: 'Throughs on', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/second-lift-level1.jpg', description: 'Second lift started', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/second-lift-2-level1.jpg', description: 'Almost there', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/field-wall-complete.jpg', description: 'Field Wall Complete', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
+        { url: '../images/complete-sandstone-level1.jpg', description: 'Sandstone Wall Complete', link: 'https://www.dswa.org.uk/', linkText: 'DWSA' },
       ];
 
       const YDSWG = 
      [
-        { url: '../images/half-way-ydswg.jpg', description: 'Yorkshire Dry Stone Walling Guild' },
-        { url: '../images/ydswg-wall.jpg', description: 'Complete' },
-        { url: '../images/ydswg-wall-2.jpg', description: 'The other side' },
+        { url: '../images/half-way-ydswg.jpg', description: 'Yorkshire Dry Stone Walling Guild', link: 'https://www.ydswg.co.uk/', linkText: 'YDSWG'  },
+        { url: '../images/ydswg-wall.jpg', description: 'Complete', link: 'https://www.ydswg.co.uk/', linkText: 'YDSWG'   },
+        { url: '../images/ydswg-wall-2.jpg', description: 'The other side', link: 'https://www.ydswg.co.uk/', linkText: 'YDSWG'   },
       ];
 
       const YorskshireDalesImages = 

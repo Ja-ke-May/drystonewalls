@@ -102,13 +102,16 @@ const ImageCarousel = ({ images, mainTitle }) => {
               alt={`carousel image ${index + 1}`}
               onClick={handleImageClick}
               onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd} 
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd} 
             />
                 
             {showHideInfo && (
-              <div className="absolute bottom-0 mb-2 bg-black bg-opacity-50 text-white p-2 w-full text-center">
+              <div className="absolute bottom-0 mb-2 bg-black bg-opacity-80 text-white p-2 w-full text-center">
                 {image.description}
+                {image.link && (
+                  <a href={image.link} target="_blank" rel="noopener noreferrer" className="block text-green-600 mt-1">{image.linkText}</a>
+                )}
               </div>
             )}
           </div>
