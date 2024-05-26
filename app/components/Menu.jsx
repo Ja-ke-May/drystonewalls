@@ -13,7 +13,7 @@ const Menu = ( { } ) => {
       };  
 
   return (   
-    
+    <>
     <div>
 
 
@@ -52,9 +52,9 @@ className='fixed top-0 right-0 bg-black/80 text-white text-xl md:text-2xl p-4 pt
 </Link>
     </section>
  )}
-
+</div>
 <MenuIcon onMenuToggle={handleMenuClick} />
-    </div>
+    </>
   );
 };
 
