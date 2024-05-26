@@ -47,7 +47,7 @@ const WallingServicesContent = () => {
         </div>
         <div className="text-lg">
           <p>
-           Use the grey arrow buttons to scroll through the images. Click or tap an image to hide/show text. Full screen button top left.
+           Click or tap an image to hide/show text. Full screen button top left.
            </p>
            <br />
            <PreviousWork />
