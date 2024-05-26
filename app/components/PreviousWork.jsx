@@ -58,7 +58,7 @@ const PreviousWork = () => {
   return (
     <>
            <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
-          <ImageCarousel images={NoviceCompImages} mainTitle={'Friends of Lakes, Walling Competition'} />
+          <ImageCarousel images={NoviceCompImages} mainTitle={'Friends of Lakes, Walling Comp'} />
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
           <ImageCarousel images={OtleyVolunteering} mainTitle={'Volunteer work'} />
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>

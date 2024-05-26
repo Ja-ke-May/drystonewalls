@@ -5,6 +5,8 @@ const ImageCarousel = ({ images, mainTitle }) => {
   const [showHideInfo, setShowHideInfo] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const carouselRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -62,6 +64,24 @@ const ImageCarousel = ({ images, mainTitle }) => {
     };
   }, []);
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      handleNextClick();
+    }
+
+    if (touchStartX.current - touchEndX.current < -50) {
+      handlePrevClick();
+    }
+  };
+
   return (
     <div ref={carouselRef} className="relative w-full max-w-lg mx-auto flex items-center justify-center overflow-hidden">
       <button
@@ -81,6 +101,9 @@ const ImageCarousel = ({ images, mainTitle }) => {
               className={`m-4 ${isFullscreen ? 'max-h-[90vh] max-w-[90vw]' : 'max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'}`}
               alt={`carousel image ${index + 1}`}
               onClick={handleImageClick}
+              onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd} 
             />
                 
             {showHideInfo && (
