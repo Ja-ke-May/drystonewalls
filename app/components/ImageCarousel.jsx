@@ -63,7 +63,7 @@ const ImageCarousel = ({ images, mainTitle }) => {
   }, []);
 
   return (
-    <div ref={carouselRef} className="relative w-full max-w-lg mx-auto flex items-center justify-center overflow-hidden mt-4 mb-4">
+    <div ref={carouselRef} className="relative w-full max-w-lg mx-auto flex items-center justify-center overflow-hidden">
       <button
         className="absolute left-0 menu-background text-white font-black p-2 z-20 m-2"
         onClick={handlePrevClick}
@@ -75,7 +75,7 @@ const ImageCarousel = ({ images, mainTitle }) => {
         style={{ transform: `translateX(-${currentIndex * 100}%)`, width: '100%' }}
       >
         {images.map((image, index) => (
-          <div key={index} className="w-full flex-shrink-0 flex items-center justify-center relative">
+          <div key={index} className="w-full flex-shrink-0 flex items-center justify-center relative mt-10 mb-10">
             <img
               src={image.url}
               className={`m-4 ${isFullscreen ? 'max-h-[90vh] max-w-[90vw]' : 'max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'}`}
@@ -84,7 +84,7 @@ const ImageCarousel = ({ images, mainTitle }) => {
             />
                 
             {showHideInfo && (
-              <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-2 w-full text-center">
+              <div className="absolute bottom-0 mb-2 bg-black bg-opacity-50 text-white p-2 w-full text-center">
                 {image.description}
               </div>
             )}
