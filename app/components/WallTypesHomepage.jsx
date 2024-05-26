@@ -15,7 +15,7 @@ const WallTypesHomepage = () => {
           </p>
           <div className='flex w-full items-center justify-center'>
           <img
-          src='../images/different-wall-types.jpg'
+          src='../images/dry-stone-pattern.jpg'
           className="m-4 max-h-60 max-w-60 lg:max-h-80 lg:max-w-80"
           alt='dry stone wall training walls'
           />
