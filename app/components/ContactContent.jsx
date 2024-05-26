@@ -10,6 +10,7 @@ const ContactContent = () => {
   });
 
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +23,7 @@ const ContactContent = () => {
 
   const validateInput = (input) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phonePattern = /^\d{10,15}$/; // Adjust the phone pattern as needed
+    const phonePattern = /^(?:0|\+44)\d{10}$/; // Allows '0' or '+44' followed by 10 digits for UK numbers
     return emailPattern.test(input) || phonePattern.test(input);
   };
 
@@ -36,7 +37,7 @@ const ContactContent = () => {
     emailjs.send('service_ci92ksc', 'template_e09kom7', formData, 'kk0sjrsHof4O2K32j')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
+        setSuccess(true); // Set success to true on successful submission
         setFormData({ name: '', emailOrPhone: '', message: '' }); // Reset the form after successful submission
       })
       .catch((err) => {
@@ -46,7 +47,7 @@ const ContactContent = () => {
   };
 
   return (
-    <div className="relative mt-20 min-w-[60%] max-w-[100%]">
+    <div className="relative mt-10 min-w-[60%] max-w-[100%]">
       <div id="ContactContent" className="p-6 mt-40 bg-black bg-opacity-80 rounded text-center text-white">
         <h2 className='underline hover:text-green-600 font-bold text-2xl mb-4'>
           <Link href="/contact" passHref>Contact</Link>
@@ -63,6 +64,12 @@ const ContactContent = () => {
 
         <p className='text-lg'>Or send me a message here:</p>
 
+        {success && (
+          <div className="p-4 mb-4 text-green-700 bg-green-200 rounded">
+            Message sent successfully!
+          </div>
+        )}
+
         <form onSubmit={handleSubmit} className="mt-4 text-black">
           <div className="mb-4">
             <label className="block text-white text-lg mb-2" htmlFor="name">Name</label>
@@ -73,6 +80,7 @@ const ContactContent = () => {
               value={formData.name}
               onChange={handleChange}
               className="w-full p-2 rounded"
+              maxLength="50"
               required
             />
           </div>
@@ -85,6 +93,7 @@ const ContactContent = () => {
               value={formData.emailOrPhone}
               onChange={handleChange}
               className="w-full p-2 rounded"
+              maxLength="100"
               required
             />
             {error && <p className="text-red-500 mt-2">{error}</p>}
@@ -98,6 +107,7 @@ const ContactContent = () => {
               onChange={handleChange}
               className="w-full p-2 rounded"
               rows="4"
+              maxLength="500"
               required
             />
           </div>
