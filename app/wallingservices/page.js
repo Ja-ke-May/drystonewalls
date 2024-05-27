@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/menu/Menu";
 
 import WallingServicesContent from "./components/WallingServicesContent";
 
 export default function WallingServices() {
+  
+  const [textColor, setTextColor] = useState("text-white");
   
   useEffect(() => {
     const script = document.createElement('script');
@@ -32,8 +34,10 @@ export default function WallingServices() {
     if (imageElement) {
       if (hour >= 6 && hour < 21) {
         imageElement.src = 'images/malham-cove-day.jpg';
+        setTextColor("text-black");
       } else {
         imageElement.src = 'images/malham-cove-night.jpg';
+        setTextColor("text-white");
       }
     }
   }, []);
@@ -54,7 +58,9 @@ export default function WallingServices() {
           </span>
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
-
+        <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
+        <h2 className={`font-bold ${textColor}`}>Walling Services</h2>
+        </div>
       <WallingServicesContent />
         
         <Footer />

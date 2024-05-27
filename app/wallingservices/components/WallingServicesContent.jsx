@@ -14,14 +14,11 @@ const WallingServicesContent = () => {
     <>
     <div className="relative mt-20 z-20 max-w-[100%]">
       <div id="walling-services-opening" className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white md:max-w-[100%]">
-        <div className="text-xl flex items-center justify-center inset-x-0 mb-4">
-        <h2 className='font-bold'>Walling Services</h2>
-        </div>
         <div className="text-lg">
           <p>
           Located in Huddersfield, I offer field walling/gapping services starting at £40 per metre. 
           <br />
-          My focus is on repairing fallen walls using only the original stones. I'm also happy to take on projects requiring extra stone. 
+          My focus is on repairing fallen walls using only the available stone. I'm also happy to take on projects requiring extra stone. 
           
           Every job is unique, so please <span className='underline hover:text-green-600'><Link href="/contact" passHref>reach out</Link></span> for a personalised quote. 
           </p>
@@ -65,7 +62,7 @@ const WallingServicesContent = () => {
       <div className='flex items-center justify-center'>
           <img
           src='/images/hammer-no-background.png'
-          className={`mt-40 h-40 w-40 ${rotate ? 'rotate-animation' : ''}`} 
+          className={`mt-40 max-h-40 max-w-40 ${rotate ? 'rotate-animation' : ''}`} 
           alt='walling hammer'
           onClick={handleHammerClick}
           />
