@@ -65,9 +65,6 @@ const ContactContent = () => {
   return (
     <div className="relative mt-10 min-w-[70%] max-w-[100%]">
       <div id="ContactContent" className="p-6 mt-40 bg-black bg-opacity-80 text-center text-white">
-        <h2 className='font-bold text-2xl mb-4'>
-          Contact
-        </h2>
 
         <a href="mailto:jacob-may@outlook.com" className="hover:text-green-600 text-xl block m-2" title='email'>
           Jacob-May@outlook.com
@@ -152,7 +149,7 @@ const ContactContent = () => {
       <div className='flex w-full items-center justify-center'>
           <img
           src='/images/hammer-no-background.png'
-          className={`mt-40 h-40 w-40 ${rotate ? 'rotate-animation' : ''}`} 
+          className={`mt-40 max-h-40 max-w-40 ${rotate ? 'rotate-animation' : ''}`} 
           alt='walling hammer'
           onClick={handleHammerClick}
           />

@@ -26,6 +26,7 @@ export default function Contact() {
   }, []);
 
   
+  const [textColor, setTextColor] = useState("text-white");
 
   useEffect(() => {
     const imageElement = document.getElementById('image-background');
@@ -34,8 +35,10 @@ export default function Contact() {
     if (imageElement) {
       if (hour >= 6 && hour < 21) {
         imageElement.src = 'images/malham-cove-day.jpg';
+        setTextColor("text-black");
       } else {
         imageElement.src = 'images/malham-cove-night.jpg';
+        setTextColor("text-white");
       }
     }
   }, []);
@@ -56,7 +59,9 @@ export default function Contact() {
           </span>
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
-
+        <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
+        <h2 className={`font-bold ${textColor}`}>Contact</h2>
+        </div>
         <ContactContent />
         
         <Footer />
