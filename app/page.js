@@ -8,6 +8,23 @@ import Menu from "./components/menu/Menu";
 export default function Home() {
 
   useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNWE08Q87B';
+    script.async = true;
+    document.body.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GNWE08Q87B');
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  useEffect(() => {
     const imageElement = document.getElementById('image-background');
     const hour = new Date().getHours();
 
