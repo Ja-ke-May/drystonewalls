@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";
-import Menu from "./components/Menu";
+import Menu from "./components/menu/Menu";
 
 export default function Home() {
 
