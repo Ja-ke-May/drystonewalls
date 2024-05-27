@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 
-import ContactContent from "../components/ContactContent";
+import ContactContent from "./components/ContactContent";
 
 export default function Contact() {
 

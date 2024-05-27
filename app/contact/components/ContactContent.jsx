@@ -11,6 +11,7 @@ const ContactContent = () => {
 
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,18 +38,34 @@ const ContactContent = () => {
     emailjs.send('service_ci92ksc', 'template_e09kom7', formData, 'kk0sjrsHof4O2K32j')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        setSuccess(true); // Set success to true on successful submission
-        setFormData({ name: '', emailOrPhone: '', message: '' }); // Reset the form after successful submission
+        setSuccess(true); 
+        setFormData({ name: '', emailOrPhone: '', message: '' }); 
+        setSubmitError(''); 
       })
       .catch((err) => {
         console.error('FAILED...', err);
-        alert('Failed to send the message. Please try again.');
+        setSubmitError('Failed to send the message. Please try again.');
       });
+  };
+
+  const handleCloseSuccess = () => {
+    setSuccess(false); 
+  };
+
+  const handleCloseError = () => {
+    setSubmitError(''); 
+  };
+
+  const [rotate, setRotate] = useState(false);
+
+  const handleHammerClick = () => {
+    setRotate(true);
+    setTimeout(() => setRotate(false), 1000); 
   };
 
   return (
     <div className="relative mt-10 min-w-[60%] max-w-[100%]">
-      <div id="ContactContent" className="p-6 mt-40 bg-black bg-opacity-80 rounded text-center text-white">
+      <div id="ContactContent" className="p-6 mt-40 bg-black bg-opacity-80 text-center text-white">
         <h2 className='underline hover:text-green-600 font-bold text-2xl mb-4'>
           <Link href="/contact" passHref>Contact</Link>
         </h2>
@@ -65,8 +82,20 @@ const ContactContent = () => {
         <p className='text-lg'>Or send me a message here:</p>
 
         {success && (
-          <div className="p-4 mb-4 text-green-700 bg-green-200 rounded">
+          <div className="relative p-4 mb-4 text-green-700 bg-green-200">
+            <button onClick={handleCloseSuccess} className="absolute top-0 right-0 p-2 text-green-700">
+              &#x2715;
+            </button>
             Message sent successfully!
+          </div>
+        )}
+
+        {submitError && (
+          <div className="relative p-4 mb-4 text-red-700 bg-red-200">
+            <button onClick={handleCloseError} className="absolute top-0 right-0 p-2 text-red-700">
+              &#x2715;
+            </button>
+            {submitError}
           </div>
         )}
 
@@ -79,7 +108,7 @@ const ContactContent = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 rounded"
+              className="w-full p-2"
               maxLength="50"
               required
             />
@@ -92,7 +121,7 @@ const ContactContent = () => {
               name="emailOrPhone"
               value={formData.emailOrPhone}
               onChange={handleChange}
-              className="w-full p-2 rounded"
+              className="w-full p-2"
               maxLength="100"
               required
             />
@@ -105,16 +134,28 @@ const ContactContent = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 rounded"
+              className="w-full p-2"
               rows="4"
               maxLength="500"
               required
             />
           </div>
-          <button type="submit" className="menu-background border-2 border-green-900/0 hover:border-green-600 text-white font-bold text-xl py-2 px-4 rounded">
+          <button 
+          type="submit" 
+          className="menu-background border-2 border-green-900/0 hover:border-green-600 text-white font-bold text-xl py-2 px-4"
+          onClick={handleHammerClick}
+          >
             Send
           </button>
         </form>
+        <div className='flex w-full items-center justify-center'>
+          <img
+          src='/images/hammer-no-background.png'
+          className={`mt-4 h-20 w-20 ${rotate ? 'rotate-animation' : ''}`} 
+          alt='walling hammer'
+          onClick={handleHammerClick}
+          />
+          </div>
       </div>
     </div>
   );
