@@ -7,6 +7,24 @@ import Menu from "../components/menu/Menu";
 import ComingSoon from "../components/ComingSoon";
 
 export default function LearnTheBasics() {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNWE08Q87B';
+    script.async = true;
+    document.body.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GNWE08Q87B');
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  
   const [rotate, setRotate] = useState(false);
 
   const handleHammerClick = () => {
