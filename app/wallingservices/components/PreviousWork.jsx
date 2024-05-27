@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageCarousel from './ImageCarousel';
+import ImageCarousel from '../../components/ImageCarousel';
 import Link from 'next/link';
 
 const PreviousWork = () => {

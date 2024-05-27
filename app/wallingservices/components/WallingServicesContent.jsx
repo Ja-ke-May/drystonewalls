@@ -15,12 +15,14 @@ const WallingServicesContent = () => {
     <div className="relative mt-20 z-20 max-w-[100%]">
       <div id="walling-services-opening" className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white md:max-w-[100%]">
         <div className="text-xl flex items-center justify-center inset-x-0 mb-4">
-        <h2 className='underline hover:text-green-600 font-bold'><Link href="/wallingservices" passHref>Walling Services</Link></h2>
+        <h2 className='font-bold'>Walling Services</h2>
         </div>
         <div className="text-lg">
           <p>
-          Located in Huddersfield, I offer field walling/gapping services starting at £40 per meter. 
+          Located in Huddersfield, I offer field walling/gapping services starting at £40 per metre. 
           <br />
+          My focus is on repairing fallen walls using only the original stones. I'm also happy to take on projects requiring extra stone. 
+          
           Every job is unique, so please <span className='underline hover:text-green-600'><Link href="/contact" passHref>reach out</Link></span> for a personalised quote. 
           </p>
         
@@ -34,7 +36,7 @@ const WallingServicesContent = () => {
           </div>
 
           <p>
-          I'm also available for work throughout the UK; <span className='underline hover:text-green-600'><Link href="/contact" passHref>contact</Link></span> me to discuss your needs.
+          I'm available for work throughout the UK; <span className='underline hover:text-green-600'><Link href="/contact" passHref>contact</Link></span> me to discuss your needs.
           </p>
         </div>
       </div>
@@ -43,7 +45,7 @@ const WallingServicesContent = () => {
 <div className="relative mt-20 z-20 max-w-[100%]">
       <div className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white">
         <div className="text-xl flex items-center justify-center inset-x-0 mb-4">
-        <h3 className='underline font-bold'>Previous Work</h3>
+        <h3 className='font-bold'>Previous Work</h3>
         </div>
         <div className="text-lg">
           <p>
@@ -55,17 +57,19 @@ const WallingServicesContent = () => {
       </div>
       <div className='w-full flex justify-center'>
       <div className="max-w-[50%] p-10 bg-black bg-opacity-80 text-center text-white text-xl mt-20">
-        <p><span className='underline hover:text-green-600'><Link href="/contact" passHref>Contact</Link></span> me for a quote.</p>
-        <div className='flex items-center justify-center'>
+        <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>Contact me for a quote.</Link></p>
+        
+      </div>
+      
+      </div>
+      <div className='flex items-center justify-center'>
           <img
           src='/images/hammer-no-background.png'
-          className={`mt-4 h-20 w-20 ${rotate ? 'rotate-animation' : ''}`} 
+          className={`mt-40 h-40 w-40 ${rotate ? 'rotate-animation' : ''}`} 
           alt='walling hammer'
           onClick={handleHammerClick}
           />
           </div>
-      </div>
-      </div>
     </div>
     </>
   );};

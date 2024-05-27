@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import Menu from "../components/Menu";
+import Menu from "../components/menu/Menu";
 
 import ContactContent from "./components/ContactContent";
 

@@ -1,17 +1,24 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import Menu from "../components/Menu";
+import Menu from "../components/menu/Menu";
 
-import WallingServicesHomepge from "../components/WallingServicesHomepage";
-import LearnTheBasicsHomepge from "../components/LearnTheBasicsHomepage";
-import HistoryHomepage from "../components/HistoryHomepage";
-import WallTypesHomepage from "../components/WallTypesHomepage";
-import QuizHomepage from "../components/QuizHomepage";
+import WallingServicesHomepge from "./components/WallingServicesHomepage";
+import LearnTheBasicsHomepge from "./components/LearnTheBasicsHomepage";
+import HistoryHomepage from "./components/HistoryHomepage";
+import WallTypesHomepage from "./components/WallTypesHomepage";
+import QuizHomepage from "./components/QuizHomepage";
 
 
 export default function Homepage() {
+  const [rotate, setRotate] = useState(false);
+
+  const handleHammerClick = () => {
+    setRotate(true);
+    setTimeout(() => setRotate(false), 1000); 
+  };
+
 
   useEffect(() => {
     const imageElement = document.getElementById('image-background');
@@ -48,6 +55,15 @@ export default function Homepage() {
 <HistoryHomepage />
 <WallTypesHomepage /> 
 <QuizHomepage />  
+
+<div className='flex w-full items-center justify-center'>
+          <img
+          src='/images/hammer-no-background.png'
+          className={`mt-40 h-40 w-40 ${rotate ? 'rotate-animation' : ''}`} 
+          alt='walling hammer'
+          onClick={handleHammerClick}
+          />
+          </div>
 
         <Footer />
         <Menu className='z-20' />

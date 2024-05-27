@@ -1,12 +1,18 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import Menu from "../components/Menu";
+import Menu from "../components/menu/Menu";
 import ComingSoon from "../components/ComingSoon";
 
 
 export default function WallingServices() {
+  const [rotate, setRotate] = useState(false);
+
+  const handleHammerClick = () => {
+    setRotate(true);
+    setTimeout(() => setRotate(false), 1000); 
+  };
 
   useEffect(() => {
     const imageElement = document.getElementById('image-background');
@@ -39,6 +45,15 @@ export default function WallingServices() {
         </h1>
 
         <ComingSoon />
+
+        <div className='flex w-full items-center justify-center'>
+          <img
+          src='/images/hammer-no-background.png'
+          className={`mt-40 h-40 w-40 ${rotate ? 'rotate-animation' : ''}`} 
+          alt='walling hammer'
+          onClick={handleHammerClick}
+          />
+          </div>
 
         <Footer />
         <Menu className='z-20' />

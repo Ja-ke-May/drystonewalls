@@ -110,7 +110,7 @@ const ImageCarousel = ({ images, mainTitle }) => {
               <div className="absolute bottom-0 mb-2 bg-black bg-opacity-80 text-white p-2 w-full text-center">
                 {image.description}
                 {image.link && (
-                  <a href={image.link} target="_blank" rel="noopener noreferrer" className="block text-green-600 mt-1">{image.linkText}</a>
+                  <a href={image.link} target="_blank" rel="noopener noreferrer" className="block text-green-600 underline mt-1">{image.linkText}</a>
                 )}
               </div>
             )}
@@ -128,7 +128,7 @@ const ImageCarousel = ({ images, mainTitle }) => {
         <h3 className="absolute top-0 bg-black bg-opacity-50 text-white font-bold p-2 w-full text-center">{mainTitle}</h3>
       )}
        <button
-        className="absolute top-0 left-0 text-white font-black p-2 z-20 ml-2 mt-5"
+        className="absolute top-0 left-0 text-white font-black p-2 z-20 ml-2 mt-10"
         onClick={toggleFullscreen}
       >
         ⛶

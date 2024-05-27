@@ -2,9 +2,9 @@
 
 import { useEffect } from "react";
 import Footer from "../components/Footer";
-import Menu from "../components/Menu";
+import Menu from "../components/menu/Menu";
 
-import WallingServicesContent from "../components/WallingServicesContent";
+import WallingServicesContent from "./components/WallingServicesContent";
 
 export default function WallingServices() {
 
