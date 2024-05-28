@@ -148,7 +148,7 @@ const BuildingBasics = () => {
              <br />
              Secure any unstable stones at the rear with fill material, these are called pins. Avoid pinning the wall from the face side, as this can cause displacement as the wall settles over time.
              <br />
-             Again the centre of the wall after each course should packed with fill. Do not use loose gravel or earth unless that is the local style, in most walls these will allow movement which can cause a collapse.</p>
+             Again the centre of the wall after each course should be packed with fill. Do not use loose gravel or earth unless that is the local style, in most walls these will allow movement which can cause a collapse.</p>
 
             <p className='mt-4'><strong>Through Stones</strong>
             <div className='w-full flex justify-center mt-4 mb-4'>
