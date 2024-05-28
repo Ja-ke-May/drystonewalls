@@ -62,30 +62,30 @@ const BuildingBasics = () => {
           <p className='mt-8 mb-4'>Before we get started here's some of the lingo you might need to refer to: 
           </p>
           <div className='text-md'>   
-            <p id="batter" className='text-lg mt-2 font-bold text-green-600'><strong>Batter</strong>: <span className='text-md font-normal text-white'>The slight lean or slope intentionally built into the wall's structure, ensuring stability by widening the base compared to the top.
+            <p id="batter" className='text-lg mt-2 font-bold text-green-600'><strong>Batter</strong> - <span className='text-md font-normal text-white'>The slight lean or slope intentionally built into the wall's structure, ensuring stability by widening the base compared to the top.
             </span>
             </p>      
-            <p id="copes" className='text-lg mt-2 font-bold text-green-600'><strong>Copes</strong>: <span className='text-md font-normal text-white'>The top or coping stones of a wall, providing a finished edge and protecting the wall's core from weathering.
+            <p id="copes" className='text-lg mt-2 font-bold text-green-600'><strong>Copes</strong> - <span className='text-md font-normal text-white'>The top or coping stones of a wall, providing a finished edge and protecting the wall's core from weathering.
             </span>
             </p>
-            <p id="course" className='text-lg mt-2 font-bold text-green-600'><strong>Course</strong>: <span className='text-md font-normal text-white'>A continuous horizontal layer of similarly sized stones within a wall. Each course is built upon the one below it, contributing to the overall structure and stability of the wall.
+            <p id="course" className='text-lg mt-2 font-bold text-green-600'><strong>Course</strong> - <span className='text-md font-normal text-white'>A continuous horizontal layer of similarly sized stones within a wall. Each course is built upon the one below it, contributing to the overall structure and stability of the wall.
             </span>
             </p>
-            <p id="face" className='text-lg mt-2 font-bold text-green-600'><strong>Face</strong>: <span className='text-md font-normal text-white'>The visible side of both the wall and individual stones. Its quality affects the wall's appearance and structural integrity.
+            <p id="face" className='text-lg mt-2 font-bold text-green-600'><strong>Face</strong> - <span className='text-md font-normal text-white'>The visible side of both the wall and individual stones. Its quality affects the wall's appearance and structural integrity.
             </span></p>
-            <p id="fill" className='text-lg mt-2 font-bold text-green-600'><strong>Fill</strong>: <span className='text-md font-normal text-white'>Small stones used to fill gaps between larger stones in the centre of the wall, providing structural support and stability to the wall.
+            <p id="fill" className='text-lg mt-2 font-bold text-green-600'><strong>Fill</strong> - <span className='text-md font-normal text-white'>Small stones used to fill gaps between larger stones in the centre of the wall, providing structural support and stability to the wall.
             </span>
             </p>
-            <p id="foundation" className='text-lg mt-2 font-bold text-green-600'><strong>Foundation</strong>: <span className='text-md font-normal text-white'>The lowest part of the wall, laid below ground level, providing stability and distributing the weight of the wall evenly.
+            <p id="foundation" className='text-lg mt-2 font-bold text-green-600'><strong>Foundation</strong> - <span className='text-md font-normal text-white'>The lowest part of the wall, laid below ground level, providing stability and distributing the weight of the wall evenly.
             </span>
             </p>
-            <p id="pinning" className='text-lg mt-2 font-bold text-green-600'><strong>Pinning</strong>: <span className='text-md font-normal text-white'>The process of securing stones in place with smaller, usually flat stones, to prevent movement and maintain stability.
+            <p id="pinning" className='text-lg mt-2 font-bold text-green-600'><strong>Pinning</strong> - <span className='text-md font-normal text-white'>The process of securing stones in place with smaller, usually flat stones, to prevent movement and maintain stability.
             </span>
             </p>
-            <p id="traced" className='text-lg mt-2 font-bold text-green-600'><strong>Traced</strong>: <span className='text-md font-normal text-white'>Stones laid lengthwise along the face of the wall, reducing structural integrity.
+            <p id="traced" className='text-lg mt-2 font-bold text-green-600'><strong>Traced</strong> - <span className='text-md font-normal text-white'>Stones laid lengthwise along the face of the wall, reducing structural integrity.
             </span>
             </p>
-            <p id="throughs" className='text-lg mt-2 font-bold text-green-600'><strong>Throughs</strong>: <span className='text-md font-normal text-white'> Large stones placed through the width of the wall, these tie the wall together.
+            <p id="throughs" className='text-lg mt-2 font-bold text-green-600'><strong>Throughs</strong> - <span className='text-md font-normal text-white'> Large stones placed through the width of the wall, these tie the wall together.
             </span>
             </p>
           </div>
@@ -150,7 +150,7 @@ const BuildingBasics = () => {
              <br />
              Again the centre of the wall after each course should be packed with fill. Do not use loose gravel or earth unless that is the local style, in most walls these will allow movement which can cause a collapse.</p>
 
-            <p className='mt-4'><strong>Through Stones</strong>
+            <p className='mt-4'><strong>Throughs</strong>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/throughs-on-level1-2.jpg' 
@@ -190,12 +190,12 @@ Keep a close eye on the batter to ensure the wall maintains the proper width as 
       className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
        />
       </div> 
-            Complete the wall with top/coping stones, use a line above the wall to keep level, the trick to this is to have each stone almost touch the line, usually at its highest centre point. Do not allow any stone to touch the line or they wil not stay level. Each stone sould sit securley on the top stones of the wall crossing the joints so no stone is left lose.</p>
+            Complete the wall with top/coping stones, use a line above the wall to keep level, the trick to this is to have each stone almost touch the line, usually at its highest centre point. Do not allow any stone to touch the line or they wil not stay level. Each stone should sit securley on the top stones of the wall crossing the joints so no stone is left lose.</p>
           </div>
           
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
           
-          <p className='mt-8'>By meticulously following these steps, builders can create a durable and visually appealing dry stone walls that reflect craftsmanship and attention to detail.</p>
+          <p className='mt-8'>By diligently adhering to these steps, builders can craft dry stone walls that are not only durable and visually striking but also serve as a testament to their impeccable craftsmanship and unwavering attention to detail.</p>
           <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/curved-dry-stone-wall.jpg' 

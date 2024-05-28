@@ -10,7 +10,7 @@ const WhatIsDSW = () => {
         <h3 className='font-bold'>What is a dry stone wall?</h3>
         </div>
       <p className='md:text-lg'>
-        A dry stone wall is a type of wall constructed from stones without any mortar to bind them together. Built using carefully selected and skillfully placed stones, these walls are known for their durability and strength. They are a common sight in the UK countryside, particularly in areas like the Yorkshire Dales and the Cotswolds. Dry stone walls have been used for centuries to mark boundaries, enclose fields, and manage livestock, reflecting both the practical needs and the rich heritage of rural Britain.
+        A dry stone wall is a type of wall constructed from stones without any mortar to bind them together. Built using carefully selected and skillfully placed stones, these walls are known for their durability and strength. They are a common sight in the UK countryside, particularly in areas like the Yorkshire Dales and the Cotswolds. Dry stone walls have been used for centuries to mark boundaries, enclose fields and manage livestock, reflecting both the practical needs and the rich heritage of rural Britain.
       </p>
       <div className='w-full flex justify-center mt-2 mb-2'>
       <img 
