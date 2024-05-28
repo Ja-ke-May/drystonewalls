@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/menu/Menu";
-
+import Link from "next/link";
 import WhatIsDSW from "./components/WhatIsDSW";
 import WhyDSW from "./components/WhyDSW";
 import BuildingBasics from "./components/BuildingBasics";
@@ -52,25 +52,21 @@ export default function LearnTheBasics() {
   }, []);
 
   const handleScrollToBuildingBasics = () => {
-    console.log("Scroll function called"); 
     const buildingBasicsSection = document.getElementById('building-basics');
     buildingBasicsSection.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleScrollToWhatIsDSW = () => {
-    console.log("Scroll function called"); 
     const whatIsDSWSection = document.getElementById('what-is-dsw');
     whatIsDSWSection.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleScrollToWhyDSW = () => {
-    console.log("Scroll function called"); 
     const whyDSWSection = document.getElementById('why-dsw');
     whyDSWSection.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleScrollToToolsEquipment= () => {
-    console.log("Scroll function called"); 
     const toolsEquipmentSection = document.getElementById('tools-equipment');
     toolsEquipmentSection.scrollIntoView({ behavior: "smooth" });
   };
@@ -94,17 +90,22 @@ export default function LearnTheBasics() {
         <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
         <h2 className={`font-bold ${textColor}`}>Learn the Basics</h2>
         </div>
-
-        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-8`} onClick={handleScrollToWhatIsDSW}>What is a dry stone wall?</button>
-        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-2`} onClick={handleScrollToWhyDSW}>Why do we need dry stone walls?</button>
-        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-2`} onClick={handleScrollToBuildingBasics}>Building basics</button>
-        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-2`} onClick={handleScrollToToolsEquipment}>Tools and equipment</button>
-
+<div className="w-full bg-black/80 flex flex-col justify-center mt-10">
+        <button className={`underline md:text-lg text-white hover:text-green-600 mt-5`} onClick={handleScrollToWhatIsDSW}>What is a dry stone wall?</button>
+        <button className={`underline md:text-lg text-white hover:text-green-600 mt-2`} onClick={handleScrollToWhyDSW}>Why do we need dry stone walls?</button>
+        <button className={`underline md:text-lg text-white hover:text-green-600 mt-2`} onClick={handleScrollToBuildingBasics}>Building basics</button>
+        <button className={`underline md:text-lg text-white hover:text-green-600 mt-2 mb-5`} onClick={handleScrollToToolsEquipment}>Tools and equipment</button>
+        </div>
         <WhatIsDSW />
         <WhyDSW />
         <BuildingBasics />
         <ToolsAndEquipment />
 
+        <div className='w-full flex justify-center'>
+      <div className="max-w-[50%] p-10 bg-black bg-opacity-80 text-center text-white text-xl mt-40">
+        <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/history" passHref>Discover more about the ancient art of dry stone walls</Link></p>
+      </div>
+      </div>
         <div className='flex w-full items-center justify-center'>
           <img
           src='/images/hammer-no-background.png'

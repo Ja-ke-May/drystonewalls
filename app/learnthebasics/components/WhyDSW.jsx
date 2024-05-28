@@ -10,9 +10,27 @@ const WhyDSW = () => {
         <p className='md:text-lg'>
           Dry stone walls are an essential feature of the UK countryside, serving various practical and ecological purposes. They are used to mark boundaries between properties and fields, providing a clear and durable division of land. These walls also play a crucial role in managing livestock, keeping animals enclosed and protected.
         </p>
+
+        <div className='w-full flex justify-center mt-2 mb-2'>
+      <img 
+      src='../images/wall-lakes-1.jpg' 
+      alt='dry stone wall in field with sheep'
+      className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
+       />
+      </div>
+
         <p className="mt-2 md:text-lg">
           Beyond their practical uses, dry stone walls contribute significantly to biodiversity. The gaps and crevices in the walls provide habitats for a variety of flora and fauna, supporting ecosystems and promoting wildlife conservation. Furthermore, dry stone walls help with soil retention and water drainage, preventing erosion and maintaining the integrity of the landscape.
         </p>
+
+        <div className='w-full flex justify-center mt-2 mb-2'>
+      <img 
+      src='../images/wall-moss.jpg' 
+      alt='dry stone wall with moss'
+      className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
+       />
+      </div>
+
         <p className="mt-2 md:text-lg">
           Overall, dry stone walls are not only functional structures but also an integral part of the UK’s natural and cultural heritage, reflecting centuries of agricultural tradition and landscape management.
         </p>
