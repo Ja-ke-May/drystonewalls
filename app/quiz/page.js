@@ -65,7 +65,7 @@ export default function WallingServices() {
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
         <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
-        <h2 className={`font-bold ${textColor}`}>Quiz</h2>
+        <h2 className={`font-bold ${textColor}`}>Test your Knowledge</h2>
         </div>
         <ComingSoon />
 

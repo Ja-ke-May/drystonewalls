@@ -1,6 +1,5 @@
 import React from 'react';
 import ImageCarousel from '../../components/ImageCarousel';
-import Link from 'next/link';
 
 const PreviousWork = () => {
 
@@ -59,7 +58,7 @@ const PreviousWork = () => {
   return (
     <>
            <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
-          <ImageCarousel images={NoviceCompImages} mainTitle={'Friends of Lakes, Walling Comp'} />
+          <ImageCarousel images={NoviceCompImages} mainTitle={'Friends of Lakes, walling comp'} />
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
           <ImageCarousel images={OtleyVolunteering} mainTitle={'Volunteer work'} />
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>

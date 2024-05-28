@@ -64,7 +64,7 @@ const ContactContent = () => {
 
   return (
     <div className="relative mt-10 min-w-[70%] max-w-[100%]">
-      <div id="ContactContent" className="p-6 mt-20 bg-black bg-opacity-80 text-center text-white">
+      <div id="ContactContent" className="p-6 mt-10 bg-black bg-opacity-80 text-center text-white">
 
         <a href="mailto:jacob-may@outlook.com" className="hover:text-green-600 text-xl block m-2" title='email'>
           Jacob-May@outlook.com

@@ -7,6 +7,7 @@ import Menu from "../components/menu/Menu";
 import WhatIsDSW from "./components/WhatIsDSW";
 import WhyDSW from "./components/WhyDSW";
 import BuildingBasics from "./components/BuildingBasics";
+import ToolsAndEquipment from "./components/ToolsAndEquipment";
 
 export default function LearnTheBasics() {
 
@@ -50,6 +51,30 @@ export default function LearnTheBasics() {
     }
   }, []);
 
+  const handleScrollToBuildingBasics = () => {
+    console.log("Scroll function called"); 
+    const buildingBasicsSection = document.getElementById('building-basics');
+    buildingBasicsSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollToWhatIsDSW = () => {
+    console.log("Scroll function called"); 
+    const whatIsDSWSection = document.getElementById('what-is-dsw');
+    whatIsDSWSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollToWhyDSW = () => {
+    console.log("Scroll function called"); 
+    const whyDSWSection = document.getElementById('why-dsw');
+    whyDSWSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleScrollToToolsEquipment= () => {
+    console.log("Scroll function called"); 
+    const toolsEquipmentSection = document.getElementById('tools-equipment');
+    toolsEquipmentSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>  
       <img
@@ -67,11 +92,18 @@ export default function LearnTheBasics() {
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
         <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
-        <h2 className={`font-bold ${textColor}`}>Learn the basics</h2>
+        <h2 className={`font-bold ${textColor}`}>Learn the Basics</h2>
         </div>
+
+        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-8`} onClick={handleScrollToWhatIsDSW}>What is a dry stone wall?</button>
+        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-2`} onClick={handleScrollToWhyDSW}>Why do we need dry stone walls?</button>
+        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-2`} onClick={handleScrollToBuildingBasics}>Building basics</button>
+        <button className={`underline md:text-lg ${textColor} hover:text-green-600 mt-2`} onClick={handleScrollToToolsEquipment}>Tools and equipment</button>
+
         <WhatIsDSW />
         <WhyDSW />
         <BuildingBasics />
+        <ToolsAndEquipment />
 
         <div className='flex w-full items-center justify-center'>
           <img
