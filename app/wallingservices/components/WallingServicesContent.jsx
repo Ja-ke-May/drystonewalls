@@ -12,7 +12,7 @@ const WallingServicesContent = () => {
  
   return (
     <>
-    <div className="relative mt-20 z-20 max-w-[100%]">
+    <div className="relative mt-10 z-20 max-w-[100%]">
       <div id="walling-services-opening" className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white md:max-w-[100%]">
         <div className="text-lg">
           <p>
