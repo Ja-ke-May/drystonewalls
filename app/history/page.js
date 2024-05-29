@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/menu/Menu";
-
-import ComingSoon from "../components/ComingSoon";
+import HistoryContent from "./components/HistoryContent";
 
 export default function History() {
 
@@ -67,7 +66,8 @@ export default function History() {
         <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
         <h2 className={`font-bold ${textColor}`}>History</h2>
         </div>
-        <ComingSoon />
+
+       <HistoryContent />
 
         <div className='flex w-full items-center justify-center'>
           <img
