@@ -95,7 +95,7 @@ const BuildingBasics = () => {
           <p className='mt-8'>When rebuilding a dry stone wall, attention to detail in each step ensures a structurally sound and an aesthetically pleasing result:</p>
          
           <div className="mt-4">
-            <p><strong>Stripping out</strong></p>
+            <p className='text-green-600'><strong>Stripping out</strong></p>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/stripping-out-level1-2.jpg' 
@@ -114,7 +114,7 @@ const BuildingBasics = () => {
             Any small stones should be placed in a pile or bucket to be used as <a onClick={handleScrollToFill} className='underline hover:text-green-600'>fill</a>.
             </p>
 
-            <p className='mt-4'><strong>Foundations</strong></p>
+            <p className='mt-4 text-green-600'><strong>Foundations</strong></p>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/otley-foundations.jpg' 
@@ -130,7 +130,7 @@ const BuildingBasics = () => {
             <br />
             In the centre of the foundation, use the largest fill stones, securely placing each one until level. Avoid <a onClick={handleScrollToPinning} className='underline hover:text-green-600'>pinning</a> any foundation stones as this will significantly affect the stability of the wall. Instead, level the stones by digging the ground underneath.</p>
            
-            <p className='mt-4'><strong>First lift</strong></p>
+            <p className='mt-4 text-green-600'><strong>First lift</strong></p>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/first-lift-level1-2.jpg' 
@@ -150,7 +150,7 @@ const BuildingBasics = () => {
              <br />
              Again the centre of the wall after each course should be packed with fill. Do not use loose gravel or earth unless that is the local style, in most walls these will allow movement which can cause a collapse.</p>
 
-            <p className='mt-4'><strong>Throughs</strong></p>
+            <p className='mt-4 text-green-600'><strong>Throughs</strong></p>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/throughs-on-level1-2.jpg' 
@@ -167,7 +167,7 @@ Throughs need to be placed as flat and stable as possible. Given their typically
             Through stones serve to unify both sides of the wall, acting as key elements in its overall strength. By placing them thoughtfully and securely, you enhance the wall's durability and resilience.
             </p>
            
-            <p className='mt-4'><strong>Second lift</strong></p>
+            <p className='mt-4 text-green-600'><strong>Second lift</strong></p>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/second-lift-level1-2.jpg' 
@@ -182,7 +182,7 @@ A key point to remember is to save some of the flattest stones for the top, usin
 Keep a close eye on the batter to ensure the wall maintains the proper width as it rises. Near the top, ensure the width is suitable for the copes. This attention to detail is crucial for both structural integrity and aesthetic appeal.
             </p>
             
-            <p className='mt-4'><strong>Copes</strong></p>
+            <p className='mt-4 text-green-600'><strong>Copes</strong></p>
             <div className='w-full flex justify-center mt-4 mb-4'>
       <img 
       src='../images/wall-rough.jpg' 
