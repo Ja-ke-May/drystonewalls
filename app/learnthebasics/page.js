@@ -103,7 +103,7 @@ export default function LearnTheBasics() {
 
         <div className='w-full flex justify-center'>
       <div className="max-w-[50%] p-10 bg-black bg-opacity-80 text-center text-white text-xl mt-40">
-        <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/history" passHref>Discover more about the ancient art of dry stone walls</Link></p>
+        <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/history" passHref>Discover more about this ancient art</Link></p>
       </div>
       </div>
         <div className='flex w-full items-center justify-center'>

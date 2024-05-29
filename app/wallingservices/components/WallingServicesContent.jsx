@@ -57,7 +57,7 @@ const WallingServicesContent = () => {
       </div>
       <div className='w-full flex justify-center'>
       <div className="max-w-[50%] p-10 bg-black bg-opacity-80 text-center text-white text-xl mt-20">
-        <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>Contact me for a quote.</Link></p>
+        <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>Contact me for a quote</Link></p>
         <div className='w-[100%] menu-background h-2 mt-10 mb-5'></div>
         <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/learnthebasics" passHref>Learn the basics here</Link></p> 
       </div>
