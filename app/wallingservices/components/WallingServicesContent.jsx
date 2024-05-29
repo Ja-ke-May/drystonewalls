@@ -32,6 +32,9 @@ const WallingServicesContent = () => {
           />
           </div>
 
+          <p className='mt-2 mb-2'>Check out the current government funding for stone wall restoration <a href="https://www.gov.uk/countryside-stewardship-grants/stone-wall-restoration-bn12#how-much-will-be-paid" target="_blank" rel="noopener noreferrer" className='underline text-green-600'>here</a>.</p>
+    
+
           <p>
           I'm available for work throughout the UK; <span className='underline hover:text-green-600'><Link href="/contact" passHref>contact</Link></span> me to discuss your needs.
           </p>
@@ -55,6 +58,7 @@ const WallingServicesContent = () => {
       <div className='w-full flex justify-center'>
       <div className="max-w-[50%] p-10 bg-black bg-opacity-80 text-center text-white text-xl mt-20">
         <p className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>Contact me for a quote.</Link></p>
+        <div className='w-[100%] menu-background h-2 mt-10 mb-5'></div>
         <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/learnthebasics" passHref>Learn the basics here</Link></p> 
       </div>
       </div>
