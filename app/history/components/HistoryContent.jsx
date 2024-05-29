@@ -6,10 +6,11 @@ const HistoryContent = () => {
   return (
     <div className="relative mt-10 z-20">
       <section id="history-content">
-        
-       <HistoryIntro />
-       <Timeline />
 
+       <HistoryIntro />
+       
+       <Timeline />
+       
       </section>
     </div>
   );

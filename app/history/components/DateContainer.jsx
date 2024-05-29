@@ -9,7 +9,7 @@ const DateContainer = ({ historyMoment }) => {
         <p className='md:ml-6 md:text-lg font-mono'>{date}</p>
       </div>
 
-      <div className='h-[100%] menu-background w-2 pt-2 ml-5 md:ml-20'>
+      <div className='menu-background w-2 pt-2 ml-5 md:ml-20'>
         <div className="flex flex-row">
           <div className='flex flex-col text-right'>
             <h3 className='text-2xl md:text-2xl text-green-600'>{title}</h3>
