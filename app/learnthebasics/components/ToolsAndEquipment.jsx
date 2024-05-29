@@ -14,12 +14,12 @@ const ToolsAndEquipment = () => {
             className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
           />
         </div> 
-        <p className='md:text-lg mt-4'>
+        <div className='md:text-lg mt-4'>
           Repairing dry stone walls demands a range of essential tools, tailored to the specific needs of each project. While the toolkit may vary, here are the fundamental items to consider:
           <ul className='mt-4'>
           <li className="mt-2"><strong className='text-green-600'>Buckets -</strong> Practical for transporting smaller stones and tools around the worksite.</li>
           <li className="mt-2"><strong className='text-green-600'>Chisels -</strong> Necessary for precise shaping and detailing of stones.</li>
-          <li className="mt-2"><strong className='text-green-600'>Club Hammer -</strong> Provides extra force for heavier tasks such as splitting larger stones.</li>
+          <li className="mt-2"><strong className='text-green-600'>Lump Hammer -</strong> Provides extra force for heavier tasks such as splitting larger stones.</li>
           <li className="mt-2"><strong className='text-green-600'>Crowbar -</strong> Essential for lifting and maneuvering heavy stones into place.</li>
           <li className="mt-2"><strong className='text-green-600'>Eye Protection -</strong> Necessary to shield eyes from potential debris during construction.</li>
           <li className="mt-2"><strong className='text-green-600'>Pick or Mattock -</strong> Useful for breaking up stubborn ground and preparing the site.</li>
@@ -30,7 +30,7 @@ const ToolsAndEquipment = () => {
           <li className="mt-2"><strong className='text-green-600'>Walling Hammer -</strong> Ideal for shaping and dressing stones to fit seamlessly.</li>
           <li className="mt-2"><strong className='text-green-600'>Walling Lines -</strong> Indispensable for maintaining straight and level lines throughout the construction process.</li>
            </ul>
-        </p>
+        </div>
       </div>
     </div>
   );
