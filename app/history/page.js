@@ -77,7 +77,7 @@ export default function History() {
         <p className='mt-4'>If you know an interesting moment in the history of dry stone walling that you think should be added to the timeline, <span className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>let me know</Link></span>
       </p>
         <div className='w-[100%] menu-background h-2 mt-10 mb-5'></div>
-        <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/walltypes" passHref>Discover UK's diverse range of walls</Link></p> 
+        <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/walltypes" passHref>Discover the UK's diverse range of walls</Link></p> 
       </div>
       </div>
 
