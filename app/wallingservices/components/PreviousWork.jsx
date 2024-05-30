@@ -51,7 +51,6 @@ const PreviousWork = () => {
       const RetainingWallImages =
       [
         { url: '../images/before-after-curved-retaining.jpg', description: 'Before/After curved garden wall' },
-        { url: '../images/before-after-stepped-garden.jpg', description: 'Before/After stepped garden' },
       ];
  
  
@@ -68,7 +67,7 @@ const PreviousWork = () => {
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
           <ImageCarousel images={YorskshireDalesImages} mainTitle={'Yorkshire Dales'} />
           <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
-          <ImageCarousel images={RetainingWallImages} mainTitle={'Retaining walls'} />
+          <ImageCarousel images={RetainingWallImages} mainTitle={'Garden wall'} />
     </>
   );};
 
