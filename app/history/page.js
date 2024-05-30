@@ -73,10 +73,10 @@ export default function History() {
        
 
       <div className='w-full flex justify-center'>
-      <div className="max-w-[50%] p-10 bg-black bg-opacity-80 text-center text-white text-lg md:text-xl mt-20">
-        <p className='mt-4'>If you know an interesting moment in the history of dry stone walling that you think should be added to the timeline, <span className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>let me know</Link></span>
+      <div className="p-10 bg-black bg-opacity-80 text-center text-white text-lg md:text-xl mt-20">
+        <p className='mt-4'>If you know any historic moments to add to the timeline, <span className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>let me know</Link></span>
       </p>
-        <div className='w-[100%] menu-background h-2 mt-10 mb-5'></div>
+        <div className='menu-background h-2 mt-10 mb-5'></div>
         <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/walltypes" passHref>Discover the UK's diverse range of walls</Link></p> 
       </div>
       </div>
