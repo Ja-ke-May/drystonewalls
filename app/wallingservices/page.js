@@ -50,17 +50,18 @@ export default function WallingServices() {
         alt="Background"
       />
       <main className="relative flex flex-col items-center">
-        <h1 className="text-image-fill">
-          <span className="font-black flex flex-col text-4xl md:text-5xl">
+      <h1 className="text-center flex flex-col justify-center items-center">
+          <span className="text-image-fill font-black flex flex-col text-4xl md:text-5xl text-left">
             <span>Dry</span>
             <span>Stone</span>
             <span>Walls</span>
           </span>
-          <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
+         
+          <span className={`md:text-xl text-black font-black`}>by Jacob May</span>
+          <br />
+          <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Walling Services</span>
         </h1>
-        <div className="max-w-[50%] text-black text-center mt-10 text-2xl md:text-3xl">
-        <h2 className={`font-bold ${textColor}`}>Walling Services</h2>
-        </div>
+
       <WallingServicesContent />
         
         <Footer />
