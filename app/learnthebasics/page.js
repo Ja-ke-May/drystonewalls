@@ -88,7 +88,7 @@ export default function LearnTheBasics() {
          
           <span className={`md:text-xl text-black font-black`}>by Jacob May</span>
           <br />
-          <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Learn The Basics</span>
+          <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Learn the Basics</span>
         </h1>
 
 <div className="w-full bg-black/80 flex flex-col justify-center mt-10">

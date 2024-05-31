@@ -29,15 +29,15 @@ const Footer = () => {
 </Link>
 
 <Link href="/learnthebasics" passHref>
-      <button className="hover:text-green-600 text-lg block" title='learnthebasics'>Learn the basics</button>
+      <button className="hover:text-green-600 text-lg block" title='learnthebasics'>Learn the Basics</button>
 </Link>
 
 <Link href="/history" passHref>
       <button className="hover:text-green-600 text-lg block" title='history'>History</button>
 </Link>
 
-<Link href="/walltypes" passHref>
-      <button className="hover:text-green-600 text-lg block" title='contact'>UK Wall Types</button>
+<Link href="/stylesandtypes" passHref>
+      <button className="hover:text-green-600 text-lg block" title='contact'>Styles and Types</button>
 </Link>
 
 <Link href="/quiz" passHref>

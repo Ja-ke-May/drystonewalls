@@ -64,7 +64,7 @@ export default function WallTypes() {
          
           <span className={`md:text-xl text-black font-black`}>by Jacob May</span>
           <br />
-          <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>UK Wall Types</span>
+          <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Styles and Types</span>
         </h1>
 
 
