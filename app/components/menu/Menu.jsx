@@ -39,8 +39,8 @@ className='fixed top-0 right-0 bg-black/90 text-white text-xl md:text-2xl p-4 pt
       <button className="hover:text-green-600 text-lg block" title='history'>History</button>
 </Link>
 
-<Link href="/stylesandtypes" passHref>
-      <button className="hover:text-green-600 text-lg block" title='contact'>Styles and Types</button>
+<Link href="/typesandstyles" passHref>
+      <button className="hover:text-green-600 text-lg block" title='contact'>Types and Styles</button>
 </Link>
 
 <Link href="/quiz" passHref>
