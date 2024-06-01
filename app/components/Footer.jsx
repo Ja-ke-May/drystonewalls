@@ -36,8 +36,8 @@ const Footer = () => {
       <button className="hover:text-green-600 text-lg block" title='history'>History</button>
 </Link>
 
-<Link href="/stylesandtypes" passHref>
-      <button className="hover:text-green-600 text-lg block" title='contact'>Styles and Types</button>
+<Link href="/typesandstyles" passHref>
+      <button className="hover:text-green-600 text-lg block" title='contact'>Types and Styles</button>
 </Link>
 
 <Link href="/quiz" passHref>

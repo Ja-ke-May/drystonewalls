@@ -77,7 +77,7 @@ export default function History() {
         <p className='mt-4'>If you know any historic moments to add to the timeline, <span className='underline hover:text-green-600' onClick={handleHammerClick}><Link href="/contact" passHref>let me know</Link></span>
       </p>
         <div className='menu-background h-2 mt-10 mb-5'></div>
-        <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/stylesandtypes" passHref>Discover the UK's diverse range of wall styles and types</Link></p> 
+        <p className='underline hover:text-green-600 mt-10' onClick={handleHammerClick}><Link href="/typesandstyles" passHref>Discover the UK's diverse range of wall types and styles</Link></p> 
       </div>
       </div>
 

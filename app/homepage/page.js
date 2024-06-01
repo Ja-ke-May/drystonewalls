@@ -7,7 +7,7 @@ import Menu from "../components/menu/Menu";
 import WallingServicesHomepge from "./components/WallingServicesHomepage";
 import LearnTheBasicsHomepge from "./components/LearnTheBasicsHomepage";
 import HistoryHomepage from "./components/HistoryHomepage";
-import StylesTypesHomepage from "./components/StylesTypesHomepage";
+import TypesStylesHomepage from "./components/TypesStylesHomepage";
 import QuizHomepage from "./components/QuizHomepage";
 
 
@@ -77,7 +77,7 @@ export default function Homepage() {
 <WallingServicesHomepge />
 <LearnTheBasicsHomepge />
 <HistoryHomepage />
-<StylesTypesHomepage /> 
+<TypesStylesHomepage /> 
 <QuizHomepage />  
 
 <div className='flex w-full items-center justify-center'>

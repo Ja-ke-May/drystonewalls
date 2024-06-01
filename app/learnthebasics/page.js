@@ -9,7 +9,7 @@ import WhyDSW from "./components/WhyDSW";
 import BuildingBasics from "./components/BuildingBasics";
 import ToolsAndEquipment from "./components/ToolsAndEquipment";
 
-export default function LearnTheBasics() {
+export default function LearntheBasics() {
 
   useEffect(() => {
     const script = document.createElement('script');
