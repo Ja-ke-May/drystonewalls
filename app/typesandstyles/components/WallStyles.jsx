@@ -10,7 +10,7 @@ const WallStyles = () => {
         <h3 className='font-bold'>Styles</h3>
         </div>
       <p className='md:text-lg mb-4'>
-      Walls have been integral to human civilization for centuries, serving various functional and aesthetic purposes. From simple boundary markers to sophisticated engineering feats, walls come in numerous styles, each tailored to specific needs and environmental conditions. Understanding the different styles of walls reveals a fascinating interplay of construction techniques, cultural influences, and practical considerations. These diverse wall styles not only reflect regional architectural traditions but also demonstrate the adaptability and creativity of human ingenuity in crafting enduring and effective structures. In the upcoming sections, we'll explore the distinct styles of dry stone walls across different regions, offering insights into the rich heritage and craftsmanship behind these iconic structures. 
+      Walls have been integral to human civilization for centuries, serving various functional and aesthetic purposes. From simple boundary markers to sophisticated engineering feats, walls come in numerous styles, each tailored to specific needs and environmental conditions. Understanding the different styles of walls reveals a fascinating interplay of construction techniques, cultural influences, and practical considerations. These diverse styles not only reflect regional architectural traditions but also demonstrate the adaptability and creativity of human ingenuity in crafting enduring and effective structures. In the upcoming sections, we'll explore the distinct styles of dry stone walls across different regions, offering insights into the rich heritage and craftsmanship behind these iconic structures. 
       </p>
       
       <p className='mt-2 md:text-lg '>
@@ -30,9 +30,9 @@ alt='Neist Point Scotland'
 className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
 />
 </div>
-  <p  className='text-md font-normal text-white mb-10'>Scotland's dry stone walls, affectionately known as 'drystane dykes', weave a rich tapestry of regional variations and construction techniques that mirror the country's diverse geological landscapes and cultural heritage. The iconic 'double dyke' style reigns supreme in central Scotland, characterized by two faces filled with hearting and fortified with throughstones, often crafted from the durable whinstone. In the southern and western regions, sandstone versions add a touch of local flavor, showcasing the adaptability of Scottish craftsmanship to different materials.
+  <p  className='text-md font-normal text-white mb-10'>Scotland's dry stone walls, known as 'drystane dykes', weave a rich tapestry of regional variations and construction techniques that mirror the country's diverse geological landscapes and cultural heritage. The iconic 'double dyke' style reigns supreme in central Scotland, characterized by two faces filled with hearting and fortified with throughstones, often crafted from the durable whinstone. In the southern and western regions, sandstone versions add a touch of local flavor, showcasing the adaptability of Scottish craftsmanship to different materials.
 <br />
-Guided by meticulous specifications outlined by authorities like the Stewartry Drystane Dyking Committee, Scottish craftsmen meticulously ensure the durability and stability of these iconic structures. From incorporating practical features like openings for shepherds and trappers to mastering the art of single dykes using challenging materials like granite or coarse-textured stones, each wall stands as a testament to the skill and dedication of its builders.
+Guided by meticulous specifications outlined by authorities like the Stewartry Drystane Dyking Committee, Scottish craftsmen ensure the durability and stability of these iconic structures. From incorporating practical features like openings for shepherds and trappers to mastering the art of single dykes using challenging materials like granite or coarse-textured stones, each wall stands as a testament to the skill and dedication of its builders.
 <br />
 The influence of Scottish craftsmanship extends far beyond the country's borders, inspiring similar construction methods in distant locales such as the Isle of Man and Aberdeenshire. Here, unique styles tailored for specific purposes find resonance, echoing the enduring bond between Scotland's people and their landscape. Whether it's the simplicity of a single dyke or the intricate craftsmanship of a Galloway dyke, each wall serves as a timeless monument to Scotland's rich heritage and the enduring connection between its people and the land they call home.
 </p>
@@ -45,7 +45,7 @@ alt='irish dry stone wall'
 className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
 />
 </div>
-  <p className='text-md font-normal text-white mb-10'>Irish dry stone walls, renowned for their rugged and cyclopean appearance, embody a unique blend of history, geography, and craftsmanship. Constructed predominantly from rough glacial boulders, these walls stand as enduring symbols of Ireland's landscape, shaped by the scarcity of easily shaped materials like Jurassic limestone and the extensive glacial drift that blankets the country.
+  <p className='text-md font-normal text-white mb-10'>Irish dry stone walls, renowned for their rugged appearance, embody a unique blend of history, geography, and craftsmanship. Constructed predominantly from rough glacial boulders, these walls stand as enduring symbols of Ireland's landscape, shaped by the scarcity of easily shaped materials like Jurassic limestone and the extensive glacial drift that blankets the country.
 <br />
 While some of these walls can trace their origins back to the Iron Age, the majority emerged during the 18th and early 19th centuries, coinciding with enclosures in lowland farming areas. Unlike their Scottish counterparts, walls in southern and central Ireland often exhibit less batter and fewer throughstones. Coping materials vary, ranging from mortar and sod to randomly placed small stones, reflecting the local availability and preferences of builders.
 <br />
@@ -136,7 +136,7 @@ Additionally, the South West abounds with ancient enclosure relics, such as sing
 
 <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
 
-<p className='mt-2 md:text-lg '>Traditional dry stone walls spanning various regions epitomize unique construction styles honed over centuries, serving as enduring reflections of local landscapes, weather conditions, and the rich heritage of craftsmanship.
+<p className='mt-2 md:text-lg '>Traditional dry stone walls spanning various regions epitomize unique construction styles honed over centuries, serving as lasting reflections of local landscapes, weather conditions, and the rich traditions of craftsmanship.
 </p>
 
       </section>

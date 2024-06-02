@@ -47,9 +47,9 @@ export default function Home() {
       <main className="relative flex flex-col items-center">
         <h1 className="text-image-fill">
           <span className="font-black flex flex-col text-4xl md:text-5xl">
-            <span>Dry</span>
-            <span>Stone</span>
-            <span>Walls</span>
+            <span>Dry </span>
+            <span>Stone </span>
+            <span>Walls </span>
           </span>
           <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
         </h1>
