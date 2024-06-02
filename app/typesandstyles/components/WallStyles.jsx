@@ -136,7 +136,7 @@ Additionally, the South West abounds with ancient enclosure relics, such as sing
 
 <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
 
-<p className='mt-2 md:text-lg '>Dry stone walls spanning various regions, from Scotland's rugged sheep stells to the Cornish hedges of the South West, epitomize unique construction styles honed over centuries, each tailored to their local landscapes and weather conditions.
+<p className='mt-2 md:text-lg '>Traditional dry stone walls spanning various regions epitomize unique construction styles honed over centuries, serving as enduring reflections of local landscapes, weather conditions, and the rich heritage of craftsmanship.
 </p>
 
       </section>
