@@ -13,8 +13,8 @@ const WhyDSW = () => {
 
         <div className='w-full flex justify-center mt-2 mb-2'>
       <img 
-      src='../images/wall-lakes-1.jpg' 
-      alt='dry stone wall in field with sheep'
+      src='../images/wall-trees.jpg' 
+      alt='dry stone wall, tree and gate'
       className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
        />
       </div>
