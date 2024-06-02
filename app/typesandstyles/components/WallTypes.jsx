@@ -10,7 +10,7 @@ const WallTypes = () => {
         <h3 className='font-bold'>Types</h3>
         </div>
       <p className='md:text-lg'>
-      Walls have been integral to human civilization for centuries, serving various functional and aesthetic purposes. From simple boundary markers to sophisticated engineering feats, walls come in numerous forms, each tailored to specific needs and environmental conditions. Understanding the different types of walls reveals a fascinating interplay of construction techniques, cultural influences, and practical considerations. These diverse wall types not only reflect regional architectural traditions but also demonstrate the adaptability and creativity of human ingenuity in building durable and effective structures.
+      Dry stone walls have been integral to human civilization for centuries, serving various functional and aesthetic purposes. From simple boundary markers to sophisticated engineering feats, walls come in numerous forms, each tailored to specific needs and environmental conditions. Understanding the different types of walls reveals a fascinating interplay of construction techniques, cultural influences, and practical considerations. These diverse wall types not only reflect regional architectural traditions but also demonstrate the adaptability and creativity of human ingenuity in building durable and effective structures.
       </p>
    
       <p className='mt-4 md:text-lg '>
@@ -80,8 +80,8 @@ A ha-ha is a type of landscape feature that serves as a boundary without obstruc
             <p id="field-wall" className='text-green-600 text-lg mt-4'><strong>Field Wall</strong></p>
             <div className='w-full flex justify-center mt-2 mb-4'>
       <img 
-      src='../images/drawings/wall-pattern-fields.jpg' 
-      alt='drawing of field dry stone wall'
+      src='../images/red-green-wall.jpg' 
+      alt='red and green field dry stone wall'
       className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
        />
       </div>
@@ -91,13 +91,23 @@ A ha-ha is a type of landscape feature that serves as a boundary without obstruc
             <p id="retaining-wall" className='text-green-600 text-lg mt-4'><strong>Retaining Wall</strong></p>
             <div className='w-full flex justify-center mt-2 mb-4'>
       <img 
-      src='../images/drawings/wall-pattern-fields.jpg' 
-      alt='drawing of a retaining dry stone wall'
+      src='../images/retaining-wall-close.jpg' 
+      alt='retaining dry stone wall'
       className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
        />
       </div>
             <p className='text-md font-normal text-white mb-10'>Retaining walls are engineered structures designed to hold back soil and prevent erosion. These walls are essential in landscaping and construction projects where there are significant changes in elevation. They can be made from various materials, including stone, concrete, and wood. Retaining walls are built to withstand the lateral pressure of the soil they are holding back and are often reinforced with additional features like drainage systems to manage water flow and reduce hydrostatic pressure.
             </p>
+
+            <p id="retaining-wall" className='text-green-600 text-lg mt-4'><strong>Other Types</strong></p>
+            <div className='w-full flex justify-center mt-2 mb-4'>
+      <img 
+      src='../images/ireland-stone-walls.jpg' 
+      alt='drawing of a retaining dry stone wall'
+      className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
+       />
+      </div>
+            <p className='text-md font-normal text-white mb-10'>In addition to the more common varieties, the UK showcases several specialized dry stone walls, each tailored to unique environmental and functional needs. Cripple Hole walls, for instance, feature gaps that allow small animals to pass through, promoting local wildlife movement. Turf-Capped walls are topped with a layer of turf, enhancing stability and helping the wall blend naturally into the landscape. In regions where large boulders are plentiful, walls constructed from singular massive stones are prevalent, utilizing the natural abundance of materials. These specialized walls highlight the creativity and adaptability of traditional construction methods, reflecting the diverse demands and conditions across different landscapes.  </p>
 
             
           </div>
