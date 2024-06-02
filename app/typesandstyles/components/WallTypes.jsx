@@ -73,7 +73,7 @@ const WallTypes = () => {
        />
       </div>
             <p  className='text-md font-normal text-white mb-10'>
-A ha-ha is a type of landscape feature that serves as a boundary without obstructing views. A dry stone ha-ha consists of a ditch with a stone retaining wall on the inner side, blending seamlessly into the landscape. This design allows for an unobstructed view across the terrain while still providing an effective barrier to livestock. Ha-has are often found in large estates or landscaped gardens, preserving aesthetic appeal while fulfilling practical purposes.
+A ha-ha is a type of landscape feature that serves as a boundary without obstructing views. A dry stone ha-ha consists of a ditch with a stone retaining wall on the inner side, blending seamlessly into the landscape. This design allows for an unobstructed view across the terrain while still providing an effective barrier to livestock. Ha-ha's are often found in large estates or landscaped gardens, preserving aesthetic appeal while fulfilling practical purposes.
             </p>
 
             

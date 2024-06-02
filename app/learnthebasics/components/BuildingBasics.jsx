@@ -68,12 +68,12 @@ const BuildingBasics = () => {
             <p id="copes" className='mt-2 font-bold text-green-600'><strong>Copes</strong> - <span className='text-md font-normal text-white'>The top or coping stones of a wall, providing a finished edge and protecting the wall's core from weathering.
             </span>
             </p>
-            <p id="course" className='mt-2 font-bold text-green-600'><strong>Course</strong> - <span className='text-md font-normal text-white'>A continuous horizontal layer of similarly sized stones within a wall. Each course is built upon the one below it, contributing to the overall structure and stability of the wall.
+            <p id="course" className='mt-2 font-bold text-green-600'><strong>Course</strong> - <span className='text-md font-normal text-white'>A continuous horizontal layer of similarly sized stones within a wall. Each course is built upon the one below it, contributing to the overall structure and stability.
             </span>
             </p>
             <p id="face" className='mt-2 font-bold text-green-600'><strong>Face</strong> - <span className='text-md font-normal text-white'>The visible side of both the wall and individual stones. Its quality affects the wall's appearance and structural integrity.
             </span></p>
-            <p id="fill" className='mt-2 font-bold text-green-600'><strong>Fill</strong> - <span className='text-md font-normal text-white'>Small stones used to fill gaps between larger stones in the centre of the wall, providing structural support and stability to the wall.
+            <p id="fill" className='mt-2 font-bold text-green-600'><strong>Fill</strong> - <span className='text-md font-normal text-white'>Small stones used to fill gaps between larger stones in the centre of the wall. Sometimes called packing or hearting, they provide structural support and stability to the wall.
             </span>
             </p>
             <p id="foundation" className='mt-2 font-bold text-green-600'><strong>Foundation</strong> - <span className='text-md font-normal text-white'>The lowest part of the wall, laid below ground level, providing stability and distributing the weight of the wall evenly.

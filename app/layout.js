@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dry Stone Walls by Jacob May",
-  description: "Dry Stone Walls by Jacob May. Huddersfield based dry stone waller available for work. Learn how to dry stone wall, the history of walling, types of walls around the UK and test your knowledge with the dry stone walling quiz.",
+  description: "West Yorkshire dry stone waller available for work. Learn the basics, explore UK types/styles, discover walling history, and test your knowledge with the quiz.",
 };
 
 export default function RootLayout({ children }) {

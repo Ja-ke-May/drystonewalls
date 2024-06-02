@@ -52,9 +52,9 @@ export default function WallingServices() {
       <main className="relative flex flex-col items-center">
       <h1 className="text-center flex flex-col justify-center items-center">
           <span className="text-image-fill font-black flex flex-col text-4xl md:text-5xl text-left">
-            <span>Dry</span>
-            <span>Stone</span>
-            <span>Walls</span>
+          <span>Dry </span>
+            <span>Stone </span>
+            <span>Walls </span>
           </span>
          
           <span className={`md:text-xl text-black font-black`}>by Jacob May</span>
