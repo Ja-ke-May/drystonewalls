@@ -13,11 +13,11 @@ export const postLeaderboardData = (data) => {
   return apiClient.post('/leaderboard', data);
 };
 
-export const getLeaderboardData = async (quizType, quizDate, dateQuizTaken) => {
+export const getLeaderboardData = async (quizType, quizDate) => {
   try {
     const apiClient = createApiClient();
     const response = await apiClient.get('/leaderboard', {
-      params: { quizType, quizDate, dateQuizTaken }
+      params: { quizType, quizDate }
     });
 
     // Sort the entries by totalScore in ascending order

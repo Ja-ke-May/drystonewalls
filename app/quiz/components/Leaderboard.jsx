@@ -7,12 +7,11 @@ const Leaderboard = ({ }) => {
 
   const quizStartDate = '03/06/24';
   const selectedQuizType = 'dry stone walls';
-  const dateQuizTaken = '03/06/24';
 
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const response = await getLeaderboardData(selectedQuizType, quizStartDate, dateQuizTaken);
+        const response = await getLeaderboardData(selectedQuizType, quizStartDate);
         setLeaderboardData(response.data);
         setIsLoading(false); 
       } catch (error) {
@@ -26,13 +25,13 @@ const Leaderboard = ({ }) => {
 
     // Clear interval on component unmount to prevent memory leaks
     return () => clearInterval(intervalId);
-  }, [selectedQuizType, quizStartDate, dateQuizTaken]);
+  }, [selectedQuizType, quizStartDate]);
 
 
   return (
-    <div className="leaderboard-container relative flex flex-col justify-center items-center text-center mt-20 ml-5 mr-5 bg-black/80 p-5 md:max-w-[50%]">
+    <div id='leaderboard' className="leaderboard-container relative flex flex-col justify-center items-center text-center mt-20 ml-5 mr-5 bg-black/80 p-5 md:max-w-[50%]">
      
-      <h2 className="text-2xl font-bold mb-4">Leaderboard</h2>
+      <h2 className="text-2xl font-bold mb-4 text-green-600">Leaderboard</h2>
       <div className='w-full h-2 mb-4 menu-background'></div>
       
       {isLoading ? (

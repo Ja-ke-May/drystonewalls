@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Timer from './timer';
-import { questions } from './questions'; 
+import { questions } from './questions';
 import LeaderboardNameEntry from './LeaderboardNameEntry';
 
 const shuffleArray = (array) => {
@@ -34,15 +34,21 @@ const Quiz = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (finishTime !== null && finishTime < 10) {
+      resetQuiz();
+    }
+  }, [finishTime]);
+
   const checkAnswer = (option) => {
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
     if (option === currentQuestion.correctAnswer) {
       setScore((prevScore) => prevScore + 1);
     } else {
-      setIncorrectScore((prevIncorrectScore) => prevIncorrectScore + 1); 
+      setIncorrectScore((prevIncorrectScore) => prevIncorrectScore + 1);
     }
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-  };  
+  };
 
   const resetQuiz = () => {
     setCurrentQuestionIndex(0);
@@ -60,22 +66,29 @@ const Quiz = () => {
   };
 
   const updateFinishTime = (seconds) => {
-    setFinishTime(seconds); 
+    setFinishTime(seconds);
   };
 
   const renderScore = () => {
-    const totalScore = finishTime - score + (incorrectScore*2);
+    const totalScore = (finishTime + incorrectScore * 2) - score * 2;
 
     return (
       <div>
-        <p className='mb-2'>Correct: {score}</p>
-        <p className='mb-2'>Incorrect: {incorrectScore}</p>
-        <div className='w-full menu-background h-2 mb-2'></div>
+       
+        <p className='mb-2'>- Incorrect: {incorrectScore} <span className='text-sm'>x2</span></p>
+        <p className='mb-2'>+ Correct: {score} <span className='text-sm'>x2</span></p>
+        <div className='w-full flex justify-center items-center'>
+              <div className='w-[75%] menu-background h-2 mb-2'></div>
+              </div>
         <p className='mb-2 text-xl flex flex-col'>Final Result: <span className='text-green-400'>{totalScore}</span></p>
-        <div className='w-full menu-background h-2 mb-4'></div>
+        <div className='w-full flex justify-center items-center'>
+              <div className='w-[75%] menu-background h-2 mb-2'></div>
+              </div>
         <LeaderboardNameEntry totalScore={totalScore} />
-        <div className='w-full menu-background h-2 mb-4'></div>
-        <button className="bg-white/20 hover:border-green-600 border-2 border-gray-600/0 text-white py-2 px-4 mt-4" onClick={resetQuiz}>Back to Start</button>
+        <div className='w-full flex justify-center items-center'>
+              <div className='w-[75%] menu-background h-2 mb-2'></div>
+              </div>
+        <button className="bg-white/40 hover:border-green-600 border-2 border-gray-600/0 text-white py-2 px-4 mt-4" onClick={resetQuiz}>Back to Start</button>
       </div>
     );
   };
@@ -87,20 +100,23 @@ const Quiz = () => {
       {quizStarted && (
         <div className='mb-2'>
           <Timer quizStarted={quizStarted} allQuestionsAsked={currentQuestionIndex >= shuffledQuestions.length} resetTimer={resetTimer} updateFinishTime={updateFinishTime} />
-          <div className='w-full menu-background h-2'></div>
+          
         </div>
       )}
       {quizStarted ? (
         <div id="question-box" className="text-xl">
           {currentQuestionIndex < shuffledQuestions.length ? (
             <div>
+              <div className='w-full flex justify-center items-center'>
+              <div className='w-[75%] menu-background h-2 mb-2'></div>
+              </div>
               <p className='mb-4'>{currentQuestion.question}</p>
               <div className="grid grid-cols-2 gap-4 justify-center">
                 {currentQuestion.options.map((option, index) => (
                   <button
                     key={`${currentQuestionIndex}-${index}`}
                     onClick={() => checkAnswer(option)}
-                    className="bg-white/20 hover:border-green-600 border-2 border-gray-600/0 text-center p-2"
+                    className="bg-white/40 hover:border-green-600 border-2 border-gray-600/0 text-center p-2"
                   >
                     {option}
                   </button>
@@ -114,8 +130,10 @@ const Quiz = () => {
       ) : (
         <div>
           <h2 className='text-xl md:text-2xl font-bold mb-2'>The Quiz</h2>
-          <p className='md:text-lg'>Welcome to the Dry Stone Walling Quiz! Just like walling, accuracy and speed are key. To reach the summit of the leaderboard, you'll need to answer questions correctly and quickly. Ready to release your inner master craftsmen? Hit "Begin" and let's go!</p>
-          <button className="bg-white/20 md:text-lg hover:border-green-600 border-2 border-gray-600/0 text-white py-2 px-4 mt-4" onClick={startQuiz}>Begin</button>
+          <p className='md:text-lg'>Welcome to the Dry Stone Walling Quiz! Just like walling, accuracy and speed are key. To reach the summit of the leaderboard, you'll need to answer questions correctly and quickly. 
+          <br />
+          Ready to test your knowledge? Hit "Begin" and let's go!</p>
+          <button className="bg-white/40 md:text-lg hover:border-green-600 border-2 border-gray-600/0 text-white py-2 px-4 mt-4" onClick={startQuiz}>Begin</button>
         </div>
       )}
     </div>

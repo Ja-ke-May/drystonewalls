@@ -100,7 +100,7 @@ const LeaderboardNameEntry = ({ totalScore }) => {
     return (
       <div className='m-2 text-xl text-center justify-center'>
         <p className='text-green-100'>REF: {displayedRefNumber}</p>
-        <p>Leaderboard Position: {allTimeUserPosition}</p>
+        <p>Leaderboard Position: <span className='text-green-400'>{allTimeUserPosition}</span></p>
       </div>
     );
   }
