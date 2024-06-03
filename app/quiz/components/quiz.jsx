@@ -20,9 +20,11 @@ const shuffleArray = (array) => {
 
 const Quiz = () => {
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [incorrectScore, setIncorrectScore] = useState(0);
+  const [quizState, setQuizState] = useState({
+    currentQuestionIndex: 0,
+    score: 0,
+    incorrectScore: 0,
+  });
   const [quizStarted, setQuizStarted] = useState(false);
   const [resetTimer, setResetTimer] = useState(false);
   const [finishTime, setFinishTime] = useState(null);
@@ -41,19 +43,28 @@ const Quiz = () => {
   }, [finishTime]);
 
   const checkAnswer = (option) => {
-    const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    const currentQuestion = shuffledQuestions[quizState.currentQuestionIndex];
     if (option === currentQuestion.correctAnswer) {
-      setScore((prevScore) => prevScore + 1);
+      setQuizState((prevState) => ({
+        ...prevState,
+        score: prevState.score + 1,
+        currentQuestionIndex: prevState.currentQuestionIndex + 1,
+      }));
     } else {
-      setIncorrectScore((prevIncorrectScore) => prevIncorrectScore + 1);
+      setQuizState((prevState) => ({
+        ...prevState,
+        incorrectScore: prevState.incorrectScore + 1,
+        currentQuestionIndex: prevState.currentQuestionIndex + 1,
+      }));
     }
-    setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
   const resetQuiz = () => {
-    setCurrentQuestionIndex(0);
-    setScore(0);
-    setIncorrectScore(0);
+    setQuizState({
+      currentQuestionIndex: 0,
+      score: 0,
+      incorrectScore: 0,
+    });
     setQuizStarted(false);
     setShuffledQuestions(shuffleArray(questions));
     setResetTimer(true);
@@ -70,58 +81,62 @@ const Quiz = () => {
   };
 
   const renderScore = () => {
-    const totalScore = (finishTime + incorrectScore * 2) - score * 2;
+    const scoreMultiplier = quizState.incorrectScore === 0 ? 3 : 2;
+    const totalScore = (finishTime + quizState.incorrectScore * 2) - quizState.score * scoreMultiplier;
 
     return (
       <div>
-        <p className='mb-2'>+ Incorrect: {incorrectScore} <span className='text-sm'>x2</span></p>
-        <p className='mb-2'>- Correct: {score} <span className='text-sm'>x2</span></p>
+        <p className='mb-2'>+ Incorrect: {quizState.incorrectScore} <span className='text-sm'>x2</span></p>
+        <p className='mb-2'>- Correct: {quizState.score} <span className={`text-sm ${scoreMultiplier === 3 ? 'text-green-400' : ''}`}>x{scoreMultiplier}</span></p>
         <div className='w-full flex justify-center items-center'>
-              <div className='w-[75%] menu-background h-2 mb-2'></div>
-              </div>
+          <div className='w-[75%] menu-background h-2 mb-2'></div>
+        </div>
         <p className='mb-2 text-xl flex flex-col'>Final Result: <span className='text-green-400'>{totalScore}</span></p>
         <div className='w-full flex justify-center items-center'>
-              <div className='w-[75%] menu-background h-2 mb-2'></div>
-              </div>
+          <div className='w-[75%] menu-background h-2 mb-2'></div>
+        </div>
         <LeaderboardNameEntry totalScore={totalScore} />
         <div className='w-full flex justify-center items-center'>
-              <div className='w-[75%] menu-background h-2 mb-2'></div>
-              </div>
+          <div className='w-[75%] menu-background h-2 mb-2'></div>
+        </div>
         <button className="bg-white/40 hover:border-green-600 border-2 border-gray-600/0 text-white py-2 px-4 mt-4" onClick={resetQuiz}>Back to Start</button>
       </div>
     );
   };
 
-  const currentQuestion = shuffledQuestions[currentQuestionIndex];
+  const currentQuestion = shuffledQuestions[quizState.currentQuestionIndex];
 
   return (
     <div className={`relative flex flex-col justify-center items-center text-center mt-20 bg-black/80 md:max-w-[50%] pr-2 pl-2 pt-5 pb-5`}>
       {quizStarted && (
         <div className='mb-2'>
-          <Timer quizStarted={quizStarted} allQuestionsAsked={currentQuestionIndex >= shuffledQuestions.length} resetTimer={resetTimer} updateFinishTime={updateFinishTime} />
-          
+          <Timer quizStarted={quizStarted} allQuestionsAsked={quizState.currentQuestionIndex >= shuffledQuestions.length} resetTimer={resetTimer} updateFinishTime={updateFinishTime} />
         </div>
       )}
       {quizStarted ? (
         <div id="question-box" className="text-xl">
-          {currentQuestionIndex < shuffledQuestions.length ? (
-            <div>
-              <div className='w-full flex justify-center items-center'>
-              <div className='w-[75%] menu-background h-2 mb-2'></div>
+          {quizState.currentQuestionIndex < shuffledQuestions.length ? (
+            currentQuestion ? (
+              <div>
+                <div className='w-full flex justify-center items-center'>
+                  <div className='w-[75%] menu-background h-2 mb-2'></div>
+                </div>
+                <p className='mb-4'>{currentQuestion.question}</p>
+                <div className="grid grid-cols-2 gap-4 justify-center">
+                  {currentQuestion.options.map((option, index) => (
+                    <button
+                      key={`${quizState.currentQuestionIndex}-${index}`}
+                      onClick={() => checkAnswer(option)}
+                      className="bg-white/40 hover:border-green-600 border-2 border-gray-600/0 text-center p-2"
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
               </div>
-              <p className='mb-4'>{currentQuestion.question}</p>
-              <div className="grid grid-cols-2 gap-4 justify-center">
-                {currentQuestion.options.map((option, index) => (
-                  <button
-                    key={`${currentQuestionIndex}-${index}`}
-                    onClick={() => checkAnswer(option)}
-                    className="bg-white/40 hover:border-green-600 border-2 border-gray-600/0 text-center p-2"
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
-            </div>
+            ) : (
+              <p>Loading question...</p>
+            )
           ) : (
             renderScore()
           )}
