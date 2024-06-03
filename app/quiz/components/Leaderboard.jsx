@@ -29,10 +29,12 @@ const Leaderboard = ({ }) => {
 
 
   return (
-    <div id='leaderboard' className="leaderboard-container relative flex flex-col justify-center items-center text-center mt-20 ml-5 mr-5 bg-black/80 p-5 md:max-w-[50%]">
+    <div id='leaderboard' className="leaderboard-container relative flex flex-col justify-center items-center text-center border border-white/40 mt-20 bg-black/80 pt-5 pb-5 md:max-w-[50%]">
      
-      <h2 className="text-2xl font-bold mb-4 text-green-600">Leaderboard</h2>
-      <div className='w-full h-2 mb-4 menu-background'></div>
+      <h2 className="text-2xl font-bold mb-4">Leaderboard</h2>
+      <div className='w-full flex justify-center items-center'>
+              <div className='w-[75%] menu-background h-2 mb-2'></div>
+              </div>
       
       {isLoading ? (
         <p>Loading...</p>
@@ -44,17 +46,17 @@ const Leaderboard = ({ }) => {
             <table className="max-w-full mx-auto">
               <thead>
                 <tr>
-                  <th className="border border-white px-4 py-2">#</th>
-                  <th className="border border-white px-4 py-2"> User </th>
-                  <th className="border border-white px-4 py-2"> Score </th>
+                  <th className="border border-white/40 px-4 py-2">#</th>
+                  <th className="border border-white/40 px-4 py-2"> User </th>
+                  <th className="border border-white/40 px-4 py-2"> Score </th>
                 </tr>
               </thead>
               <tbody>
                 {leaderboardData.map((entry, index) => (
                   <tr key={entry.refNumber} className="mb-2">
-                    <td className="border border-white pb-2 pt-2">{index + 1}</td>
-                    <td className="border border-white pb-2 pt-2">{entry.userName}</td>
-                    <td className="border border-white pb-2 pt-2">{entry.totalScore}</td>
+                    <td className="border border-white/40 pb-2 pt-2">{index + 1}</td>
+                    <td className="border border-white/40 pb-2 pt-2">{entry.userName}</td>
+                    <td className="border border-white/40 pb-2 pt-2">{entry.totalScore}</td>
                   </tr>
                 ))}
               </tbody>

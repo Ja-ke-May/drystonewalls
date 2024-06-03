@@ -46,7 +46,7 @@ const LeaderboardNameEntry = ({ totalScore }) => {
   }, [selectedQuizType, quizStartDate, dateQuizTaken, submitted]);
 
   const handleInputChange = (e) => {
-    const inputText = e.target.value.replace(/[^A-Za-z0-9 ]/g, '').slice(0, 15);
+    const inputText = e.target.value.replace(/[^A-Za-z0-9 ]/g, '').slice(0, 13);
     setUserName(inputText);
   };
 
@@ -115,7 +115,7 @@ const LeaderboardNameEntry = ({ totalScore }) => {
           onKeyPress={handleKeyPress}
           className="m-2 p-2 border-2 border-green-600 text-center text-black text-xl"
           placeholder='Name for Leaderboard'
-          maxLength={15}
+          maxLength={13}
           pattern="[A-Za-z0-9 ]*"
         />
       </label>
