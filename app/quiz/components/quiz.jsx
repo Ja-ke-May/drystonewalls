@@ -73,7 +73,7 @@ const Quiz = () => {
     const totalScore = (finishTime + incorrectScore * 2) - score * 2;
 
     return (
-      <div className='max-w-screen'>
+      <div>
         <p className='mb-2'>- Incorrect: {incorrectScore} <span className='text-sm'>x2</span></p>
         <p className='mb-2'>+ Correct: {score} <span className='text-sm'>x2</span></p>
         <div className='w-full flex justify-center items-center'>
@@ -95,7 +95,7 @@ const Quiz = () => {
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
   return (
-    <div className={`relative flex flex-col justify-center items-center text-center mt-20 ml-5 mr-5 bg-black/80 p-5 md:max-w-[50%]`}>
+    <div className={`relative flex flex-col justify-center items-center text-center mt-20 bg-black/80 md:max-w-[50%] pr-2 pl-2 pt-5 pb-5`}>
       {quizStarted && (
         <div className='mb-2'>
           <Timer quizStarted={quizStarted} allQuestionsAsked={currentQuestionIndex >= shuffledQuestions.length} resetTimer={resetTimer} updateFinishTime={updateFinishTime} />
