@@ -113,7 +113,7 @@ const LeaderboardNameEntry = ({ totalScore }) => {
           value={userName}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
-          className="m-2 p-2 border-2 border-green-600 text-center text-black text-xl"
+          className="m-2 p-2 border-2 border-green-600 text-center text-black text-lg"
           placeholder='Name for Leaderboard'
           maxLength={13}
           pattern="[A-Za-z0-9 ]*"
