@@ -74,8 +74,8 @@ const Quiz = () => {
 
     return (
       <div>
-        <p className='mb-2'>- Incorrect: {incorrectScore} <span className='text-sm'>x2</span></p>
-        <p className='mb-2'>+ Correct: {score} <span className='text-sm'>x2</span></p>
+        <p className='mb-2'>+ Incorrect: {incorrectScore} <span className='text-sm'>x2</span></p>
+        <p className='mb-2'>- Correct: {score} <span className='text-sm'>x2</span></p>
         <div className='w-full flex justify-center items-center'>
               <div className='w-[75%] menu-background h-2 mb-2'></div>
               </div>
