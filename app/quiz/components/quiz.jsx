@@ -144,9 +144,9 @@ const Quiz = () => {
       ) : (
         <div>
           <h2 className='text-xl md:text-2xl font-bold mb-2'>The Quiz</h2>
-          <p className='md:text-lg'>Welcome to the Dry Stone Walling Quiz! Just like walling, accuracy and speed are key. To reach the summit of the leaderboard, you'll need to answer questions correctly and quickly. 
+          <p className='md:text-lg'>Welcome to the Dry Stone Walling Quiz! Just like crafting a sturdy wall, precision and speed are essential here. To reach the summit of the leaderboard, you'll need to answer questions correctly and quickly. 
           <br />
-          Ready to test your knowledge? Hit "Begin" and let's go!</p>
+          Are you ready to test your knowledge? Hit "Begin" and let's go!</p>
           <button className="bg-white/40 md:text-lg hover:border-green-600 border-2 border-gray-600/0 text-white py-2 px-4 mt-4" onClick={startQuiz}>Begin</button>
         </div>
       )}

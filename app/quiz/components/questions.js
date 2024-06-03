@@ -49,6 +49,56 @@ const questions = [
         options: ["9-10ft", "1-2ft", "3-5ft", "2-3ft"],
         correctAnswer: "3-5ft"
       },
+      {
+        question: "Which tool is essential for shaping stones in dry stone walling?",
+        options: ["Crowbar", "Chisel", "Trowel", "Saw"],
+        correctAnswer: "Chisel"
+      },
+      {
+        question: "What do you call a stone that is the length of the wall's thickness?",
+        options: ["Through", "Copes", "Traced", "Face"],
+        correctAnswer: "Through"
+      },
+      {
+        question: "What is the purpose of the batter in dry stone walling?",
+        options: ["Decorative", "Stability", "Ease of construction", "Weather resistance"],
+        correctAnswer: "Stability"
+      },
+      {
+        question: "What is the name of the horizontal layers in a dry stone wall?",
+        options: ["Courses", "Levels", "Rows", "Tiers"],
+        correctAnswer: "Courses"
+      },
+      {
+        question: "In dry stone walling, what is a cheek end?",
+        options: ["Long stone", "A tool", "Wall end", "Wall joint"],
+        correctAnswer: "Wall end"
+      },
+      {
+        question: "What do you call a wall built with two faces and a filled core?",
+        options: ["Double wall", "Single wall", "Solid wall", "Core wall"],
+        correctAnswer: "Double wall"
+      },
+      {
+        question: "What kind of stone is suitable for dry stone walling?",
+        options: ["Round stone", "Flat stone", "Irregular stone", "Any"],
+        correctAnswer: "Any"
+      },
+      {
+        question: "Approximately how many years old is Skara Brae?",
+        options: ["5000", "2000", "1000", "3000"],
+        correctAnswer: "5000"
+      },
+      {
+        question: "A small stone used to level or support a larger stone is called?",
+        options: ["Pin", "Button", "Slip", "Tiers"],
+        correctAnswer: "Pin"
+      },
+      {
+        question: "What do you call a wall made with a single width stack of stones?",
+        options: ["Double wall", "Single wall", "Solid wall", "Core wall"],
+        correctAnswer: "Single wall"
+      },
   ];
 
   export { questions };
