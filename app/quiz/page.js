@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/menu/Menu";
-import ComingSoon from "../components/ComingSoon";
+import Quiz from "./components/quiz";
+import Leaderboard from './components/Leaderboard';
 
 
 export default function WallingServices() {
@@ -67,7 +68,11 @@ export default function WallingServices() {
           <br />
           <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Test Your Knowledge</span>
         </h1>
-        <ComingSoon />
+        
+
+        <Quiz />
+
+        <Leaderboard />
 
         <div className='flex w-full items-center justify-center'>
           <img
