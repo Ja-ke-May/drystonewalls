@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/menu/Menu";
-import Quiz from "./components/Quiz";
+import Quiz from "./components/quiz";
 import Leaderboard from './components/Leaderboard';
 
 
