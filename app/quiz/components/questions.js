@@ -45,7 +45,7 @@ const questions = [
         correctAnswer: "Face"
       },
       {
-        question: "WHats the average dry stone wall height?",
+        question: "Whats the average dry stone wall height?",
         options: ["9-10ft", "1-2ft", "3-5ft", "2-3ft"],
         correctAnswer: "3-5ft"
       },

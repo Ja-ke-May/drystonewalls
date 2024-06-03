@@ -13,7 +13,7 @@ const MenuIcon = ( { onMenuToggle } ) => {
   return (   
     
     <button id='menu-icon'
-      className="items-center fixed top-0 right-4 mt-4 font-mono z-50"
+      className="items-center fixed top-0 right-0 md:right-2 md:mt-2 font-mono z-50"
       onClick={handleContainerClick}
     >
       <div 

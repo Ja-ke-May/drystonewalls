@@ -68,7 +68,7 @@ export default function WallingServices() {
           <br />
           <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Test Your Knowledge</span>
         </h1>
-        
+
 
         <Quiz />
 
