@@ -14,7 +14,7 @@ const Leaderboard = ({ }) => {
       try {
         const response = await getLeaderboardData(selectedQuizType, quizStartDate, dateQuizTaken);
         setLeaderboardData(response.data);
-        setIsLoading(false); // Set isLoading to false after data is fetched
+        setIsLoading(false); 
       } catch (error) {
         console.error('Error fetching leaderboard data:', error);
       }

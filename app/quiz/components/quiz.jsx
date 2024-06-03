@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Timer from './Timer';
-import { questions } from './questions'; // Assuming questions is an array of question objects
+import { questions } from './questions'; 
 import LeaderboardNameEntry from './LeaderboardNameEntry';
 
-// Shuffle function outside the component
 const shuffleArray = (array) => {
   if (!array || array.length === 0) {
     return [];
