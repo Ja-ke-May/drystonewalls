@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Timer from './Timer';
+import Timer from './timer';
 import { questions } from './questions'; 
 import LeaderboardNameEntry from './LeaderboardNameEntry';
 
