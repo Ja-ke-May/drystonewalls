@@ -29,11 +29,11 @@ const Leaderboard = ({ }) => {
 
 
   return (
-    <div id='leaderboard' className="leaderboard-container relative flex flex-col justify-center items-center text-center border border-white/40 mt-20 bg-black/80 pt-5 pb-5 md:max-w-[50%]">
+    <div id='leaderboard' className="leaderboard-container relative flex flex-col justify-center items-center text-center mt-20 bg-black/80 border border-white/40 pt-5 pb-5 md:max-w-[50%]">
      
-      <h2 className="text-2xl font-bold mb-4">Leaderboard</h2>
+      <h2 className="text-2xl font-bold mb-2">Leaderboard</h2>
       <div className='w-full flex justify-center items-center'>
-              <div className='w-[75%] menu-background h-2 mb-2'></div>
+              <div className='w-[75%] menu-background h-2 mb-4'></div>
               </div>
       
       {isLoading ? (
