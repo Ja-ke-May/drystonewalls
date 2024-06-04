@@ -44,7 +44,7 @@ const PreviousWork = () => {
      [
         { url: '../images/yd-gap-1.jpg', description: 'Walling near Settle' },
         { url: '../images/yd-gap-2.jpg', description: 'Big Gaps' },
-        { url: '../images/yd-wall.jpg', description: 'Random shaped stone' },
+        { url: '../images/yd-wall.jpg', description: 'Irregular shaped stone' },
         { url: '../images/yd-wall-2.jpg', description: 'Bit cold but looking good' },
       ];
 
