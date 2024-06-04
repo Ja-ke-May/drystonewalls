@@ -62,7 +62,6 @@ const Footer = () => {
 
       <a href="https://portfolio-tau-two-33.vercel.app/" className='text-green-600 underline block m-2' target="_blank" rel="noopener noreferrer">Website by Jacob May</a>
 
-
     </div>
   );
 };
