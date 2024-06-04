@@ -21,7 +21,7 @@ const Menu = ( { } ) => {
 
 <section 
 id="menu-list" 
-className='fixed top-0 right-0 md:right-2 md:mt-2 bg-black/90 text-white text-xl md:text-2xl p-4 pt-20 z-50'
+className='fixed top-0 right-0 md:pr-2 md:pt-2 bg-black/90 text-white text-xl md:text-2xl p-4 pt-20 z-50'
 >
         <Link href="/homepage" passHref>
       <button className="hover:text-green-600 text-lg block mt-2" title='home'>Home</button>
