@@ -7,7 +7,7 @@ const questions = [
     {
       question: "What is the top DSWA level?",
       options: ["Master Craftsmen", "Master Waller", "Top Dog", "Master Crafter"],
-      correctAnswer: "Master Craftsmen"
+      correctAnswer: "Master Craftsman"
     },
     {
       question: "A stone which is lengthways along the face of the wall is called?",
