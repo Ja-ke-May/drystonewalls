@@ -56,7 +56,7 @@ const WallTypes = () => {
             <p id="cornish-hedge" className='text-green-600 text-lg mt-4'><strong>Cornish Hedge</strong></p>
             <div className='w-full flex justify-center mt-2 mb-4'>
       <img 
-      src='../images/drawings/drawing-cornish-hedge.png' 
+      src='../images/drawings/cornish-hedge.png' 
       alt='drawing of cornish hedge dry stone wall'
       className='max-h-60 max-w-60 md:max-w-80 md:max-h-80 lg:max-h-96 lg:max-w-96'
        />
