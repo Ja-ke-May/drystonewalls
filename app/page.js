@@ -45,13 +45,13 @@ export default function Home() {
         alt="Background"
       />
       <main className="relative flex flex-col items-center">
-        <h1 className="text-image-fill">
-          <span className="font-black flex flex-col text-4xl md:text-5xl">
-            <span>Dry </span>
+      <h1 className="text-center flex flex-col justify-center items-center">
+          <span className="text-image-fill font-black flex flex-col text-4xl md:text-5xl text-left">
+          <span>Dry </span>
             <span>Stone </span>
             <span>Walls </span>
           </span>
-          <span className="md:text-xl mt-2 md:ml-2">by Jacob May</span>
+          <span className="md:text-xl text-black font-black">by Jacob May</span>
         </h1>
         
         <Welcome />
