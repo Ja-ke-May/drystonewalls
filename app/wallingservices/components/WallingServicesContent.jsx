@@ -16,7 +16,7 @@ const WallingServicesContent = () => {
       <div id="walling-services-opening" className="p-6 bg-black bg-opacity-80 mx-auto text-center text-white md:max-w-[100%]">
         <div className="text-lg">
           <p>
-          Located in Huddersfield, I offer field walling/gapping services starting at £40 per metre. 
+          Located in Huddersfield, I offer field walling/gapping services starting at £60 per metre. 
           <br />
           My focus is on repairing fallen walls using only the available stone. I'm also happy to take on projects requiring extra stone. 
           

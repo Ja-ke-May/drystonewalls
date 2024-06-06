@@ -14,7 +14,7 @@ const WallingServicesHomepage = () => {
             I'm available for work around the West Yorkshire area. 
           </p>
           <p>
-          Field walling from £40 per metre. 
+          Field walling from £60 per metre. 
           </p>
           <p>
             Please <span className='underline hover:text-green-600'><Link href="/contact" passHref>contact</Link></span> me for a quote.
