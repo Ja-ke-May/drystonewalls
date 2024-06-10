@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-BRNBE6C2T3';
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GNWE08Q87B';
     script.async = true;
     document.body.appendChild(script);
 
@@ -17,7 +17,7 @@ export default function Home() {
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-BRNBE6C2T3');
+    gtag('config', 'G-GNWE08Q87B');
 
     return () => {
       document.body.removeChild(script);
