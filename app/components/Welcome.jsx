@@ -17,7 +17,7 @@ const Welcome = () => {
         </div>
         <div className="text-lg">
           <p>
-            Hi, I'm Jake, a dry stone waller based in West Yorkshire and I'm passionate about the art of dry stone walling. 
+            Hi, I'm Jake, a dry stone waller based in West Yorkshire and I'm passionate about the craft of dry stone walling. 
           </p>
           <p className="mt-4">
             Whether you need professional <span className='underline hover:text-green-600'><Link href="/wallingservices" passHref>walling services</Link></span>, or just want to learn more about dry stone walls, you've come to the right place.
