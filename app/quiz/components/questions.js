@@ -50,9 +50,9 @@ const questions = [
         correctAnswer: "3-5ft"
       },
       {
-        question: "Which tool is essential for shaping stones in dry stone walling?",
-        options: ["Crowbar", "Chisel", "Trowel", "Saw"],
-        correctAnswer: "Chisel"
+        question: "Which tool is used the most in dry stone walling?",
+        options: ["Crowbar", "Hammer", "Trowel", "Saw"],
+        correctAnswer: "Hammer"
       },
       {
         question: "What do you call a stone that is the length of the wall's thickness?",
