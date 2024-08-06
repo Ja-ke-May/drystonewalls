@@ -69,9 +69,6 @@ const ContactContent = () => {
         <a href="mailto:jacob-may@outlook.com" className="hover:text-green-600 text-xl block m-2" title='email'>
           Jacob-May@outlook.com
         </a>
-        <a href="tel:07780685832" className="hover:text-green-600 text-xl block m-2" title='phone'>
-          07780685832
-        </a>
 
         <div className='w-[100%] menu-background h-2 mt-5 mb-5'></div>
 
