@@ -24,10 +24,6 @@ const Footer = () => {
       <button className="hover:text-green-600 text-lg block mt-2" title='homepage'>Home</button>
 </Link>
 
-<Link href="/wallingservices" passHref>
-      <button className="hover:text-green-600 text-lg block" title='wallingservices'>Walling Services</button>
-</Link>
-
 <Link href="/learnthebasics" passHref>
       <button className="hover:text-green-600 text-lg block" title='learnthebasics'>Learn the Basics</button>
 </Link>
@@ -48,10 +44,7 @@ const Footer = () => {
       <button className="hover:text-green-600 text-lg block" title='contact'>Contact</button>
 </Link>
 
-      <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div>
-
-      <a href="mailto:jacob-may@outlook.com" className="hover:text-green-600 text-xl block m-2" title='email'>Jacob-May@outlook.com</a>
-
+    
       <div className='w-[75%] md:w-[50%] menu-background h-2 m-4'></div>    
      
       <a onClick={scrollToTop} className="hover:text-green-600 text-lg">Back to Top</a>

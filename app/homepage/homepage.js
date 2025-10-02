@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Menu from "../components/menu/Menu";
 
-import WallingServicesHomepge from "./components/WallingServicesHomepage";
+
 import LearnTheBasicsHomepge from "./components/LearnTheBasicsHomepage";
 import HistoryHomepage from "./components/HistoryHomepage";
 import TypesStylesHomepage from "./components/TypesStylesHomepage";
@@ -69,12 +69,12 @@ export default function Homepage() {
             <span>Walls </span>
           </span>
          
-          <span className={`md:text-xl text-black font-black`}>by Jacob May</span>
+         
           <br />
-          <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>Home</span>
+          
         </h1>
 
-<WallingServicesHomepge />
+
 <LearnTheBasicsHomepge />
 <HistoryHomepage />
 <TypesStylesHomepage /> 
@@ -89,7 +89,7 @@ export default function Homepage() {
           />
           </div>
           
-        <Footer />
+        
         <Menu className='z-20' />
       </main>
     </>

@@ -23,13 +23,11 @@ const Menu = ( { } ) => {
 id="menu-list" 
 className='fixed top-0 right-0 md:pr-2 md:pt-2 bg-black/90 text-white text-xl md:text-2xl p-4 z-50'
 >
-        <Link href="/homepage" passHref>
+        <Link href="/" passHref>
       <button className="hover:text-green-600 text-lg block mt-10" title='home'>Home</button>
 </Link>
 
-<Link href="/wallingservices" passHref>
-      <button className="hover:text-green-600 text-lg block" title='wallingservices'>Walling Services</button>
-</Link>
+
 
 <Link href="/learnthebasics" passHref>
       <button className="hover:text-green-600 text-lg block" title='learnthebasics'>Learn the Basics</button>

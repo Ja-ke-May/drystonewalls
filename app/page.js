@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import Welcome from "./components/Welcome";
+import Homepage from "./homepage/homepage";
 import Footer from "./components/Footer";
 import Menu from "./components/menu/Menu";
 
@@ -45,16 +45,8 @@ export default function Home() {
         alt="Background"
       />
       <main className="relative flex flex-col items-center">
-      <h1 className="text-center flex flex-col justify-center items-center">
-          <span className="text-image-fill font-black flex flex-col text-4xl md:text-5xl text-left">
-          <span>Dry </span>
-            <span>Stone </span>
-            <span>Walls </span>
-          </span>
-          <span className="md:text-xl text-black font-black">by Jacob May</span>
-        </h1>
-        
-        <Welcome />
+     
+        <Homepage />
         <Footer />
         <Menu className='z-20' />
       </main>

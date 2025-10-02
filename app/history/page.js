@@ -63,7 +63,7 @@ export default function History() {
             <span>Walls </span>
           </span>
          
-          <span className={`md:text-xl text-black font-black`}>by Jacob May</span>
+          
           <br />
           <span className={`text-black text-2xl md:text-3xl font-bold ${textColor}`}>History</span>
         </h1>
