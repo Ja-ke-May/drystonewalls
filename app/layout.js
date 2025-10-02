@@ -5,8 +5,8 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Dry Stone Walls by Jacob May",
-  description: "West Yorkshire dry stone waller available for work. Learn the basics, explore UK types/styles, discover walling history, and test your knowledge with the quiz.",
+  title: "Dry Stone Walls",
+  description: "Learn the basics, explore UK types/styles, discover walling history, and test your knowledge with the quiz.",
 };
 
 export default function RootLayout({ children }) {
